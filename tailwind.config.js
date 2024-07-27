@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'roboto': ['Roboto', 'sans-serif'],
-        'bree': ['Bree Serif', 'serif'],
+        'Inter': ['Inter', 'sans-serif'],
+        'Playwrite': ['Playwrite DK Uloopet', 'sans-serif'],
       },
       colors: {
         'verde-oliva': '#6b8e23',
