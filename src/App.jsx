@@ -1,10 +1,21 @@
-import './App.css'
+import { HashRouter, Routes } from 'react-router-dom'
+import { Navbar } from './components/Navbar'
+import '../src/styles/App.css'
+import { Footer } from './components/Footer'
 
-export function App() {
+export const App = () => {
 
   return (
     <>
-      <h1 className='text-5xl font-bold'>App</h1>
+      <HashRouter>
+        <Navbar />
+        <main className='h-screen'>
+          <Routes>
+          
+          </Routes>
+        </main>
+        <Footer />
+      </HashRouter>
     </>
   )
 }

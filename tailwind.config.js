@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+        'bree': ['Bree Serif', 'serif'],
+      },
+      colors: {
+        'verde-oliva': '#6b8e23',
+        'bege-claro': '#F5F5DC',
+        'marrom-claro': '#D2B48C',
+        'branco-quente': '#FAF0E6',
+        'verde-salvia': '#9DC183',
+      },
+    },
   },
   plugins: [],
 }
