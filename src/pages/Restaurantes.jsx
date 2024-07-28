@@ -20,7 +20,7 @@ export const Restaurantes = () => {
 
   return (
     <section className='flex flex-col justify-center items-center my-3'>
-      <h1 className='text-2xl md:text-5xl uppercase text-branco-quente font-bold'>Restaurantes</h1>
+      <h1 className='text-2xl md:text-5xl uppercase text-branco-quente font-bold my-1 md:my-5'>Restaurantes</h1>
       <article className=' sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:px-[30px] lg:px-[100px]'>
         {restaurantes.map(restaurante => (
           <div className='bg-branco-quente border border-marrom-claro rounded p-4 m-4'>

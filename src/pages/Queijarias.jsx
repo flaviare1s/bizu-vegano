@@ -20,7 +20,7 @@ export const Queijarias = () => {
 
   return (
     <section className='flex flex-col justify-center items-center my-3'>
-      <h1 className='text-2xl md:text-5xl uppercase text-branco-quente font-bold'>Queijarias</h1>
+      <h1 className='text-2xl md:text-5xl uppercase text-branco-quente font-bold my-1 md:my-5'>Queijarias</h1>
       <article className=' sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:px-[30px] lg:px-[100px]'>
         {Queijarias.map(queijaria => (
           <div className='bg-branco-quente border border-marrom-claro rounded p-4 m-4'>
