@@ -21,10 +21,10 @@ export const Navbar = () => {
       {isMenuOpen && <div className='overlay bg-black opacity-60 absolute top-0 left-0 w-screen h-screen z-30 pointer-events-none'></div>}
       <section className='bg-branco-quente flex justify-between items-center mx-auto w-full px-5 relative h-[80px] sm:h-[90px] z-40'>
         <Link to='/' className='h-[70px] sm:h-[85px] flex items-center'>
-          <img className='h-full rounded-s-full px-1 py-2 border-b border-verde-oliva' src={logo} alt="logo" />
+          <img className='h-full rounded-s-full px-1 py-2' src={logo} alt="logo" />
           <h1 className='font-Playwrite text-xl md:text-3xl lg:text-2xl font-bold text-verde-oliva'>Bizu Vegano</h1>
         </Link>
-        <nav className='flex items-center'>
+        <nav className='flex items-center mr-4'>
           <ul className='hidden md:flex md:flex-wrap items-center md:space-x-4 md:text-sm'>
             <li className='relative'>
               <button onMouseEnter={toggleDropdown} className='text-verde-oliva font-semibold hover:opacity-80 uppercase flex items-center focus:outline-none'>
@@ -42,7 +42,7 @@ export const Navbar = () => {
                     <Link to='/confeitarias' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Confeitarias</Link>
                   </li>
                   <li>
-                    <Link to='/emporios' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Emporios</Link>
+                    <Link to='/emporios' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Empórios</Link>
                   </li>
                   <li>
                     <Link to='/queijarias' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Queijarias</Link>
@@ -63,7 +63,7 @@ export const Navbar = () => {
               )}
             </li>
             <li>
-              <Link to='/cosmeticos' className='text-branco-quente md:text-verde-oliva font-semibold hover:opacity-80 uppercase'>Cosmeticos</Link>
+              <Link to='/cosmeticos' className='text-branco-quente md:text-verde-oliva font-semibold hover:opacity-80 uppercase'>Cosméticos</Link>
             </li>
             <li>
               <Link to='/dicas' className='text-branco-quente md:text-verde-oliva font-semibold hover:opacity-80 uppercase'>Dicas</Link>
@@ -72,12 +72,12 @@ export const Navbar = () => {
               <Link to='/canais-youtube' className='text-branco-quente md:text-verde-oliva font-semibold hover:opacity-80 uppercase'>Canais YouTube</Link>
             </li>
           </ul>
-          <button onClick={toggleMenu} className='lg:hidden focus:outline-none mr-4 flex items-center gap-2'>
+          <button onClick={toggleMenu} className='md:hidden focus:outline-none mr-2 flex items-center gap-2'>
             <p className='text-verde-oliva text-xl font-semibold md:hidden'>MENU</p>
             <img className='cursor-pointer md:hidden' src={isMenuOpen ? iconMenuClose : iconMenuOpen} alt="menu" />
           </button>
           {isMenuOpen && (
-            <div className='absolute top-[80px] md:top-[90px] right-0 w-[250px] z-40 shadow-md lg:hidden'>
+            <div className='absolute top-[80px] sm:top-[90px] right-0 w-[250px] z-40 shadow-md lg:hidden'>
               <ul className='flex flex-col'>
                 <li className='px-4 py-2'>
                   <Link to='/restaurantes' className='text-branco-quente font-semibold hover:opacity-80'>Restaurantes</Link>
@@ -89,7 +89,7 @@ export const Navbar = () => {
                   <Link to='/confeitarias' className='text-branco-quente font-semibold hover:opacity-80'>Confeitarias</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/emporios' className='text-branco-quente font-semibold hover:opacity-80'>Emporios</Link>
+                  <Link to='/emporios' className='text-branco-quente font-semibold hover:opacity-80'>Empórios</Link>
                 </li>
                 <li className='px-4 py-2'>
                   <Link to='/queijarias' className='text-branco-quente font-semibold hover:opacity-80'>Queijarias</Link>
@@ -107,7 +107,7 @@ export const Navbar = () => {
                   <Link to='/onde-comer' className='text-branco-quente font-semibold hover:opacity-80'>Onde Comer</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/cosmeticos' className='text-branco-quente font-semibold hover:opacity-80'>Cosmeticos</Link>
+                  <Link to='/cosmeticos' className='text-branco-quente font-semibold hover:opacity-80'>Cosméticos</Link>
                 </li>
                 <li className='px-4 py-2'>
                   <Link to='/dicas' className='text-branco-quente font-semibold hover:opacity-80'>Dicas</Link>
