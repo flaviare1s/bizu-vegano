@@ -22,7 +22,7 @@ export const Navbar = () => {
       <section className='bg-branco-quente flex justify-between items-center mx-auto w-full px-5 relative h-[80px] sm:h-[90px] z-40'>
         <Link to='/' className='h-[70px] sm:h-[85px] flex items-center'>
           <img className='h-full rounded-s-full px-1' src={logo} alt="logo" />
-          <h1 className='font-Playwrite text-xl md:text-3xl lg:text-2xl font-bold text-verde-oliva'>Bizu Vegano</h1>
+          <h1 className='font-Playwrite text-xl md:text-2xl font-bold text-verde-oliva'>Bizu Vegano</h1>
         </Link>
         <nav className='flex items-center mr-4'>
           <ul className='hidden md:flex md:flex-wrap items-center md:space-x-4 md:text-sm'>
