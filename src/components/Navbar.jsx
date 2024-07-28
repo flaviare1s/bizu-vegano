@@ -40,10 +40,10 @@ export const Navbar = () => {
 
   return (
     <header className='bg-branco-quente w-screen flex justify-between items-center mx-auto relative z-50'>
-      {isMenuOpen && <div className='overlay bg-black opacity-70 absolute top-0 left-0 w-screen h-screen z-30 pointer-events-none'></div>}
-      <section className='bg-branco-quente flex justify-between items-center mx-auto w-full px-5 relative h-[80px] sm:h-[90px] z-40'>
+      {isMenuOpen && <div className='overlay bg-black opacity-80 absolute top-0 left-0 w-screen h-screen z-30 pointer-events-none'></div>}
+      <section className='bg-branco-quente flex justify-between items-center w-full px-5 relative h-[80px] sm:h-[90px] z-40'>
         <Link to='/' className='h-[70px] sm:h-[85px] flex items-center' onClick={closeMenu}>
-          <img className='h-full rounded-s-full px-1' src={logo} alt="logo" />
+          <img className='h-full rounded-s-full pr-1' src={logo} alt="logo" />
           <h1 className='font-Playwrite text-xl md:text-2xl font-bold text-verde-oliva'>Bizu Vegano</h1>
         </Link>
         <nav className='flex items-center mr-4'>
@@ -97,7 +97,7 @@ export const Navbar = () => {
               <Link to='/sobre' className='text-branco-quente md:text-verde-oliva font-semibold hover:opacity-80 uppercase' onClick={closeMenu}>Sobre</Link>
             </li>
           </ul>
-          <button onClick={toggleMenu} className='md:hidden focus:outline-none mr-2 flex items-center gap-2'>
+          <button onClick={toggleMenu} className='md:hidden focus:outline-none sm:mr-2 flex items-center gap-2'>
             <p className='text-verde-oliva text-base font-semibold md:hidden'>MENU</p>
             <img className='cursor-pointer md:hidden' src={isMenuOpen ? iconMenuClose : iconMenuOpen} alt="menu" />
           </button>
