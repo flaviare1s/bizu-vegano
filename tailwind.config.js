@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'Inter': ['Inter', 'sans-serif'],
+        'IBM': ['IBM Plex Mono', 'monospace'],
         'Playwrite': ['Playwrite DK Uloopet', 'sans-serif'],
       },
       colors: {
@@ -16,6 +16,7 @@ export default {
         'marrom-claro': '#D2B48C',
         'branco-quente': '#FAF0E6',
         'verde-salvia': '#9DC183',
+        'verde-escuro': '#3F4D34'
       },
     },
   },
