@@ -24,7 +24,6 @@ export const App = () => {
     <>
       <BrowserRouter>
         <Navbar />
-        <main className='sm:h-screen'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/restaurantes' element={<Restaurantes />} />
@@ -42,7 +41,6 @@ export const App = () => {
             <Route path='/sobre' element={<Sobre />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
-        </main>
         <Footer />
       </BrowserRouter>
     </>
