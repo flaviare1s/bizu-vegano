@@ -29,7 +29,7 @@ export const Home = () => {
       </Link>
       <Link to='/emporios' className='w-full border border-branco-quente rounded relative'>
         <img className='h-[200px] w-full object-cover rounded' src={ emporios } alt="Imagem de comida vegetariana" />
-        <h2 className='text-center text-2xl font-semibold text-branco-quente absolute bottom-[10px] right-[20px]'>Empórios</h2>
+        <h2 className='text-center text-2xl font-semibold text-branco-quente absolute bottom-[10px] right-[20px]'>Empórios e Antepastos</h2>
       </Link>
       <Link to='/queijarias' className='w-full border border-branco-quente rounded relative'>
         <img className='h-[200px] w-full object-cover rounded' src={ queijarias } alt="Imagem de comida vegetariana" />

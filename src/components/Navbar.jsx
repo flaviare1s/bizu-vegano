@@ -64,7 +64,7 @@ export const Navbar = () => {
                     <Link to='/confeitarias' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Confeitarias</Link>
                   </li>
                   <li>
-                    <Link to='/emporios' className='block px-8 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva' onClick={closeDropdown}>Empórios</Link>
+                    <Link to='/emporios' className='block px-8 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva' onClick={closeDropdown}>Empórios e Antepastos</Link>
                   </li>
                   <li>
                     <Link to='/queijarias' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Queijarias</Link>
@@ -114,7 +114,7 @@ export const Navbar = () => {
                   <Link to='/confeitarias' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Confeitarias</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/emporios' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Empórios</Link>
+                  <Link to='/emporios' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Empórios e Antepastos</Link>
                 </li>
                 <li className='px-4 py-2'>
                   <Link to='/queijarias' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Queijarias</Link>

@@ -4,7 +4,7 @@ export const Sobre = () => {
       <section className='mb-6'>
         <h1 className='text-3xl font-bold mb-4'>Sobre Bizu Vegano</h1>
         <p>
-          O Bizu Vegano foi criado para mapear estabelecimentos veganos em Fortaleza, além de locais que oferecem opções veganas em seus cardápios. Meu objetivo é fortalecer a comunidade vegana e ajudar vegetarianos e curiosos a encontrar deliciosas opções de comida na cidade. Queremos facilitar o acesso a informações sobre onde comer de forma consciente e apoiar empreendedores veganos locais.
+          O Bizu Vegano foi criado para mapear estabelecimentos veganos em Fortaleza, além de locais que oferecem opções veganas em seus cardápios. Meu objetivo é fortalecer a comunidade vegana e ajudar vegetarianos e curiosos a encontrar deliciosas opções de comida na cidade. Quero facilitar o acesso a informações sobre onde comer de forma consciente e apoiar empreendedores veganos locais.
         </p>
       </section>
 
