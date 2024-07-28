@@ -10,7 +10,6 @@ import ondeComer from '../assets/background-onde-comer.jpg'
 import cosmeticos from '../assets/background-cosmeticos.jpg'
 import dicas from '../assets/background-receitas.jpg'
 import canais from '../assets/background-canais.jpg'
-import sobre from '../assets/background-sobre.jpg'
 import { Link } from 'react-router-dom'
 
 export const Home = () => {
@@ -60,13 +59,9 @@ export const Home = () => {
         <img className='h-[200px] w-full object-cover rounded' src={ dicas } alt="Imagem de comida vegetariana" />
         <h2 className='text-center text-2xl font-semibold text-branco-quente absolute bottom-[10px] right-[20px]'>Dicas</h2>
       </Link>
-      <Link to='/canais-youtube' className='w-full border border-branco-quente rounded relative'>
+      <Link to='/canais-youtube' className='w-full border border-branco-quente rounded relative md:col-span-2'>
         <img className='h-[200px] w-full object-cover rounded' src={ canais } alt="Imagem de comida vegetariana" />
         <h2 className='text-center text-2xl font-semibold text-branco-quente absolute bottom-[10px] right-[20px]'>Canais YouTube</h2>
-      </Link>
-      <Link to='/sobre' className='w-full border border-branco-quente rounded relative'>
-        <img className='h-[200px] w-full object-cover rounded' src={ sobre } alt="Imagem de comida vegetariana" />
-        <h2 className='text-center text-2xl font-semibold text-branco-quente absolute bottom-[10px] right-[20px]'>Sobre</h2>
       </Link>
     </main>
   )
