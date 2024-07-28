@@ -16,7 +16,8 @@ export default {
         'marrom-claro': '#D2B48C',
         'branco-quente': '#FAF0E6',
         'verde-salvia': '#9DC183',
-        'verde-escuro': '#3F4D34'
+        'verde-escuro': '#3F4D34',
+        'amarelo-mostarda': '#ECAB0F',
       },
     },
   },

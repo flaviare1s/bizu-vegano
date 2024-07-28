@@ -26,12 +26,12 @@ export const Restaurantes = () => {
           <div className='bg-branco-quente border border-marrom-claro rounded p-4 m-4'>
             <div className='flex justify-start items-center gap-5'>
               <i className="fa-solid fa-leaf text-verde-oliva text-5xl"></i>
-              <h2 className='uppercase font-bold mb-2 text-center' key={restaurante.id}>{restaurante.nome}</h2>
+              <a href={restaurante.url} className='uppercase font-bold mb-2 text-center' key={restaurante.id}>{restaurante.nome}</a>
             </div>
             <hr />
             <p className='mb-2 mt-2'>{restaurante.descricao}</p>
-            {restaurante.endereco && <small>{restaurante.endereco}</small>}
-            <a className='flex items-center gap-2' href={restaurante.url}>Instagram <i className="fa-brands fa-instagram text-2xl"></i></a>
+            {restaurante.endereco ? <small>{restaurante.endereco}</small> : <small>Endereço indisponível</small>}
+            <a className='flex items-center gap-2 mt-2' href={restaurante.url}>Instagram <i className="fa-brands fa-instagram text-2xl"></i></a>
           </div>
         ))}
       </article>
