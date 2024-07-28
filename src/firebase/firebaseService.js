@@ -1,4 +1,4 @@
-import { collection, getDocs } from "firebase/firestore"; 
+import { collection, getDocs, query, where } from "firebase/firestore"; 
 import { db } from "./config"
 
 // Função genérica para buscar dados de qualquer coleção
@@ -21,4 +21,19 @@ export const fetchCollectionData = async (collectionName) => {
     console.error("Erro ao buscar dados da coleção:", error);
     throw error;
   }
+}
+
+
+// Listar por categoria
+export const categoriasCol = collection(db, 'categorias')
+export async function getCategorias(categoria) {
+  const filtro = query(categoriasCol, where('categoria', '==', categoria))
+  const snapshot = await getDocs(filtro)
+  const categorias = []
+
+  snapshot.forEach((doc) => {
+    categorias.push({...doc.data(), id: doc.id})
+  })
+
+  return categorias
 }
