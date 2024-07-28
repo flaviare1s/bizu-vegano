@@ -64,7 +64,7 @@ export const Navbar = () => {
                     <Link to='/confeitarias' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Confeitarias</Link>
                   </li>
                   <li>
-                    <Link to='/emporios' className='block px-8 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva' onClick={closeDropdown}>Empórios e Antepastos</Link>
+                    <Link to='/emporios' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Empórios e Antepastos</Link>
                   </li>
                   <li>
                     <Link to='/queijarias' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Queijarias</Link>
