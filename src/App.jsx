@@ -16,6 +16,7 @@ import { Confeitarias } from './pages/Confeitarias'
 import { Emporios } from './pages/Emporios'
 import { Queijarias } from './pages/Queijarias'
 import { CanaisYouTube } from './pages/CanaisYouTube'
+import { Sobre } from './pages/Sobre'
 
 export const App = () => {
 
@@ -38,6 +39,7 @@ export const App = () => {
             <Route path='/cosmeticos' element={<Cosmeticos />} />
             <Route path='/dicas' element={<Dicas />} />
             <Route path='/canais-youtube' element={<CanaisYouTube />} />
+            <Route path='/sobre' element={<Sobre />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </main>

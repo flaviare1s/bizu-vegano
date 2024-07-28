@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   return (
     <header className='bg-branco-quente w-screen flex justify-between items-center mx-auto relative z-50'>
-      {isMenuOpen && <div className='overlay bg-black opacity-60 absolute top-0 left-0 w-screen h-screen z-30 pointer-events-none'></div>}
+      {isMenuOpen && <div className='overlay bg-black opacity-70 absolute top-0 left-0 w-screen h-screen z-30 pointer-events-none'></div>}
       <section className='bg-branco-quente flex justify-between items-center mx-auto w-full px-5 relative h-[80px] sm:h-[90px] z-40'>
         <Link to='/' className='h-[70px] sm:h-[85px] flex items-center'>
           <img className='h-full rounded-s-full px-1' src={logo} alt="logo" />
@@ -71,6 +71,9 @@ export const Navbar = () => {
             <li>
               <Link to='/canais-youtube' className='text-branco-quente md:text-verde-oliva font-semibold hover:opacity-80 uppercase'>Canais YouTube</Link>
             </li>
+            <li>
+              <Link to='/sobre' className='text-branco-quente md:text-verde-oliva font-semibold hover:opacity-80 uppercase'>Sobre</Link>
+            </li>
           </ul>
           <button onClick={toggleMenu} className='md:hidden focus:outline-none mr-2 flex items-center gap-2'>
             <p className='text-verde-oliva text-base font-semibold md:hidden'>MENU</p>
@@ -114,6 +117,9 @@ export const Navbar = () => {
                 </li>
                 <li className='px-4 py-2'>
                   <Link to='/canais-youtube' className='text-branco-quente font-semibold hover:opacity-80'>Canais YouTube</Link>
+                </li>
+                <li className='px-4 py-2'>
+                  <Link to='/sobre' className='text-branco-quente font-semibold hover:opacity-80'>Sobre</Link>
                 </li>
               </ul>
             </div>
