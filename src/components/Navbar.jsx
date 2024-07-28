@@ -31,33 +31,33 @@ export const Navbar = () => {
                 Alimentação <span className="material-symbols-outlined">keyboard_arrow_down</span>
               </button>
               {isDropdownOpen && (
-                <ul className='absolute bg-branco-quente text-verde-oliva mt-2 p-2 space-y-2 shadow-lg rounded'>
+                <ul className='absolute bg-branco-quente text-verde-oliva mt-2 pt-2 space-y-2 shadow-lg rounded'>
                   <li>
-                    <Link to='/restaurantes' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Restaurantes</Link>
+                    <Link to='/restaurantes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente'>Restaurantes</Link>
                   </li>
                   <li>
-                    <Link to='/lanchonetes' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Lanchonetes</Link>
+                    <Link to='/lanchonetes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente'>Lanchonetes</Link>
                   </li>
                   <li>
-                    <Link to='/confeitarias' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Confeitarias</Link>
+                    <Link to='/confeitarias' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente'>Confeitarias</Link>
                   </li>
                   <li>
-                    <Link to='/emporios' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Empórios</Link>
+                    <Link to='/emporios' className='block px-8 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Empórios</Link>
                   </li>
                   <li>
-                    <Link to='/queijarias' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Queijarias</Link>
+                    <Link to='/queijarias' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente'>Queijarias</Link>
                   </li>
                   <li>
-                    <Link to='/festas' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Festas</Link>
+                    <Link to='/festas' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente'>Festas</Link>
                   </li>
                   <li>
-                    <Link to='/sorvetes' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Sorvetes</Link>
+                    <Link to='/sorvetes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente'>Sorvetes</Link>
                   </li>
                   <li>
-                    <Link to='/cafes' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Cafés</Link>
+                    <Link to='/cafes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente'>Cafés</Link>
                   </li>
                   <li>
-                    <Link to='/onde-comer' className='block px-4 py-2 hover:bg-verde-oliva md:hover:bg-branco-quente md:hover:text-verde-oliva'>Onde Comer</Link>
+                    <Link to='/onde-comer' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente'>Onde Comer</Link>
                   </li>
                 </ul>
               )}
