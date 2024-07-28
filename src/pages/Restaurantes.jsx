@@ -20,14 +20,17 @@ export const Restaurantes = () => {
 
   return (
     <section className='flex flex-col justify-center items-center my-3'>
-      <h1 className='text-2xl uppercase text-branco-quente font-bold'>Restaurantes</h1>
+      <h1 className='text-2xl md:text-5xl uppercase text-branco-quente font-bold'>Restaurantes</h1>
       <article className=' sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:px-[30px] lg:px-[100px]'>
         {restaurantes.map(restaurante => (
           <div className='bg-branco-quente border border-marrom-claro rounded p-4 m-4'>
-            <h2 className='uppercase font-bold mb-2' key={restaurante.id}>{restaurante.nome}</h2>
+            <div className='flex justify-start items-center gap-5'>
+              <i className="fa-solid fa-leaf text-verde-oliva text-5xl"></i>
+              <h2 className='uppercase font-bold mb-2 text-center' key={restaurante.id}>{restaurante.nome}</h2>
+            </div>
             <hr />
-            <p className='mb-1 mt-2'>{restaurante.descricao}</p>
-            {restaurante.endereco && <p><span className='font-bold mb-1'>Endereço:</span>{restaurante.endereco}</p>}
+            <p className='mb-2 mt-2'>{restaurante.descricao}</p>
+            {restaurante.endereco && <small>{restaurante.endereco}</small>}
             <a className='flex items-center gap-2' href={restaurante.url}>Instagram <i className="fa-brands fa-instagram text-2xl"></i></a>
           </div>
         ))}
