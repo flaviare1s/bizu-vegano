@@ -23,7 +23,7 @@ export const Cafes = () => {
 
   return (
     <section className='flex flex-col justify-center items-center my-3'>
-      <h1 className='text-2xl md:text-5xl uppercase text-branco-quente font-bold my-1 md:my-5'>Cafes</h1>
+      <h1 className='text-2xl md:text-5xl uppercase text-branco-quente font-bold my-1 md:my-5'>Cafés</h1>
       {loading ? (
         <Loader />
       ) : (
