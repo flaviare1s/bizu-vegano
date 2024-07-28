@@ -49,7 +49,7 @@ export const Navbar = () => {
         <nav className='flex items-center mr-4'>
           <ul className='hidden md:flex md:flex-wrap items-center md:space-x-4 md:text-sm'>
             <li className='relative'>
-              <button onMouseEnter={toggleDropdown} className='text-verde-oliva font-semibold hover:opacity-80 uppercase flex items-center focus:outline-none'>
+              <button onClick={toggleDropdown} className='text-verde-oliva font-semibold hover:opacity-80 uppercase flex items-center focus:outline-none'>
                 Alimentação <span className="material-symbols-outlined">keyboard_arrow_down</span>
               </button>
               {isDropdownOpen && (
