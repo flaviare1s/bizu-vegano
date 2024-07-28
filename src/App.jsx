@@ -23,7 +23,7 @@ export const App = () => {
     <>
       <BrowserRouter>
         <Navbar />
-        <main className='h-screen'>
+        <main className='sm:h-screen'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/restaurantes' element={<Restaurantes />} />
