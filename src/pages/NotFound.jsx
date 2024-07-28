@@ -3,7 +3,7 @@ import notFound from "../assets/bizu-vegano.png";
 
 export const NotFound = () => {
   return (
-    <section className="flex flex-col justify-center items-center m-auto h-full">
+    <section className="flex flex-col justify-center items-center m-auto h-screen">
       <h1 className="text-center text-3xl md:text-5xl uppercase font-semibold text-branco-quente mb-4">
         Página não encontrada!
       </h1>
