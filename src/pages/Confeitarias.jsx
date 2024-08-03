@@ -29,7 +29,7 @@ export const Confeitarias = () => {
       ) : (
         <article className='sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:px-[30px] lg:px-[100px]'>
           {Confeitarias.map(confeitaria => (
-            <div key={confeitaria.id} className='bg-branco-quente border border-marrom-claro rounded p-4 m-4'>
+            <div key={confeitaria.id} className='bg-branco-quente border border-marrom-claro rounded p-4 m-4 relative'>
               <div className='flex justify-start items-center gap-5'>
                 <i className="fa-solid fa-cake-candles text-verde-escuro text-5xl"></i>
                 <a href={confeitaria.url} className='uppercase font-bold mb-2 text-center'>{confeitaria.nome}</a>
@@ -37,7 +37,7 @@ export const Confeitarias = () => {
               <hr />
               <p className='mb-2 mt-2'>{confeitaria.descricao}</p>
               {confeitaria.endereco ? <small>{confeitaria.endereco}</small> : <small>Endereço indisponível</small>}
-              <a className='flex items-center gap-2 mt-2' href={confeitaria.url}>Instagram <i className="fa-brands fa-instagram text-2xl"></i></a>
+              <a className='flex items-center gap-2 mt-2 absolute bottom-2 right-3' href={confeitaria.url}><i className="fa-brands fa-instagram text-2xl"></i></a>
             </div>
           ))}
         </article>

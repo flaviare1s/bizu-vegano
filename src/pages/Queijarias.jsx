@@ -31,7 +31,7 @@ export const Queijarias = () => {
           ) : (
             <article className='sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:px-[30px] lg:px-[100px]'>
               {queijarias.map(queijaria => (
-                <div key={queijaria.id} className='bg-branco-quente border border-marrom-claro rounded p-4 m-4'>
+                <div key={queijaria.id} className='bg-branco-quente border border-marrom-claro rounded p-4 m-4 relative'>
                   <div className='flex justify-start items-center gap-5'>
                     <i className="fa-solid fa-cheese text-amarelo-mostarda text-5xl"></i>
                     <a href={queijaria.url} className='uppercase font-bold mb-2 text-center'>{queijaria.nome}</a>
@@ -39,7 +39,7 @@ export const Queijarias = () => {
                   <hr />
                   <p className='mb-2 mt-2'>{queijaria.descricao}</p>
                   {queijaria.endereco ? <small>{queijaria.endereco}</small> : <small>Endereço indisponível</small>}
-                  <a className='flex items-center gap-2 mt-2' href={queijaria.url}>Instagram <i className="fa-brands fa-instagram text-2xl"></i></a>
+                  <a className='flex items-center gap-2 mt-2 absolute bottom-2 right-3' href={queijaria.url}><i className="fa-brands fa-instagram text-2xl"></i></a>
                 </div>
               ))}
             </article>
