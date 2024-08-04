@@ -28,7 +28,7 @@ export const DicasPorCategoria = () => {
           <h1 className='text-lg text-center md:text-3xl text-branco-quente font-semibold my-1 md:my-5'>Escolha a categoria desejada:</h1>
           <div className='flex items-center justify-center gap-2'>
             <div className='flex flex-col'>
-              <h6 className='text-branco-quente text-center'>Filtrar por Categoria:</h6>
+              <h6 className='text-branco-quente text-center mb-2'>Filtrar por Categoria:</h6>
               <select className='mb-3' onChange={e => filtrarCategoria(e.target.value)} value={categoriaSelecionada}>
                 <option value="feirinha">Feira com lanches veg</option>
                 <option value="kombucha">Kombucha</option>
@@ -48,7 +48,7 @@ export const DicasPorCategoria = () => {
           ) : (
             <article className='w-full flex justify-center items-center flex-wrap gap-2'>
               {categorias.map(categoria => (
-                <div key={categoria.id} className='bg-branco-quente border border-marrom-claro rounded p-4 my-1 relative flex justify-between items-center w-[300px] h-[100px]'>
+                <div key={categoria.id} className='bg-branco-quente border border-marrom-claro rounded p-4 my-1 relative flex justify-between items-center w-[320px] h-[100px]'>
                   <div className='flex justify-start items-center gap-5'>
                     <a href={categoria.url} className='uppercase font-bold text-center'>{categoria.nome}</a>
                   </div>
