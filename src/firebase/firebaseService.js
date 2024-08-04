@@ -37,3 +37,18 @@ export async function getCategorias(categoria) {
 
   return categorias
 }
+
+// Filtras dicas por categoria
+export const dicasCol = collection(db, 'dicas')
+export async function getDicasCategorias(categoria) {
+  const filtro = query(dicasCol, where('categoria', '==', categoria))
+  const snapshot = await getDocs(filtro)
+  const categorias = []
+
+  snapshot.forEach((doc) => {
+    categorias.push({...doc.data(), id: doc.id})
+  })
+
+  return categorias
+}
+
