@@ -59,7 +59,7 @@ export const OndeComer = () => {
           {loading ? (
             <Loader />
           ) : (
-            <article className='sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:px-[30px] lg:px-[100px]'>
+            <article className='sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 md:px-[30px] lg:px-[100px]'>
               {categorias.map(categoria => (
                 <div key={categoria.id} className='bg-branco-quente border border-marrom-claro rounded p-4 m-4 relative flex justify-between items-center'>
                   <div className='flex justify-start items-center gap-5'>

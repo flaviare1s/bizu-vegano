@@ -25,10 +25,9 @@ export const DicasPorCategoria = () => {
   return (
     <div className="flex flex-col">
         <section className='flex flex-col justify-center items-center my-3 w-full'>
-          <h1 className='text-lg text-center md:text-3xl text-branco-quente font-semibold my-1 md:my-5'>Escolha a categoria desejada:</h1>
+          <h1 className='text-lg text-center md:text-3xl text-branco-quente font-semibold my-2 md:my-5'>Escolha a categoria desejada:</h1>
           <div className='flex items-center justify-center gap-2'>
             <div className='flex flex-col'>
-              <h6 className='text-branco-quente text-center mb-2'>Filtrar por Categoria:</h6>
               <select className='mb-3' onChange={e => filtrarCategoria(e.target.value)} value={categoriaSelecionada}>
                 <option value="feirinha">Feira com lanches veg</option>
                 <option value="kombucha">Kombucha</option>
