@@ -1,7 +1,7 @@
 export const ReceitaLegumesAoForno = () => {
   return (
     <section className="flex flex-col m-auto bg-branco-quente text-verde-escuro w-full sm:max-w-[450px] md:max-w[600px] lg:max-w-[800px] rounded p-5">
-      <h2 className="text-2xl font-bold mb-2">Receita de Legumes ao Forno com Azeite</h2>
+      <h2 className="text-2xl font-bold mb-2 sm:text-center">Receita de Legumes ao Forno com Azeite</h2>
       
       <h4 className="text-xl font-semibold mt-4">Ingredientes:</h4>
       <ul className="list-disc list-inside mt-2">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export const DicaManteiga = () => {
   return (
     <section className="flex flex-col m-auto bg-branco-quente text-verde-escuro w-full sm:max-w-[450px] md:max-w[600px] lg:max-w-[800px] rounded p-5">
-      <h2 className="text-2xl font-bold p-2 text-center">Quero veganizar, mas o que eu vou passar no pão??</h2>
+      <h2 className="text-2xl font-bold p-2 sm:text-center">Quero veganizar, mas o que eu vou passar no pão??</h2>
       <p className="my-2">
         Essa é uma dificuldade que ocorre com algumas pessoas que se tornam veganas e que estão acostumadas a ingerir manteiga e outros lácteos. Vou dar algumas dicas que me ajudam e que eu uso bastante em casa.
       </p>

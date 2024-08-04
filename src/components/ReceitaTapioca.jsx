@@ -1,7 +1,7 @@
 export const ReceitaTapioca = () => {
   return (
     <section className="flex flex-col m-auto bg-branco-quente text-verde-escuro w-full sm:max-w-[450px] md:max-w[600px] lg:max-w-[800px] rounded p-5">
-      <h2 className="text-2xl font-bold p-2 text-center">Receitinha rápida e prática para substituir o pão</h2>
+      <h2 className="text-2xl font-bold p-2 sm:text-center">Receitinha rápida e prática para substituir o pão</h2>
       <h3>Tapioca de Cuscuz</h3>
       <h4 className="text-xl font-semibold mt-4">Ingredientes:</h4>
       <ul className="list-disc list-inside mt-2">

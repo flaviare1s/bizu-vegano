@@ -48,9 +48,9 @@ export const DicasPorCategoria = () => {
           ) : (
             <article className='w-full flex justify-center items-center flex-wrap gap-2'>
               {categorias.map(categoria => (
-                <div key={categoria.id} className='bg-branco-quente border border-marrom-claro rounded p-4 my-1 relative flex justify-between items-center w-[320px] h-[100px]'>
+                <div key={categoria.id} className='bg-branco-quente border border-marrom-claro rounded p-4 my-1 relative flex justify-between items-center w-[340px] h-[100px]'>
                   <div className='flex justify-start items-center gap-5'>
-                    <a href={categoria.url} className='uppercase font-bold text-center'>{categoria.nome}</a>
+                    <a href={categoria.url} className='uppercase font-bold'>{categoria.nome}</a>
                   </div>
                   <a href={categoria.url}><i className="fa-brands fa-instagram text-2xl ml-4"></i></a>
                 </div>
