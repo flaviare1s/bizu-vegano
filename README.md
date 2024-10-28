@@ -32,4 +32,4 @@ Agradecimentos especiais também para a comunidade vegana de Fortaleza, que insp
 
 ## Hospedagem do Projeto
 
-Bizu Vegano está hospedado no [Firebase Hosting](https://bizu-vegano.web.app/). Isso garante uma entrega rápida e segura do conteúdo do site para os usuários.
+Bizu Vegano está hospedado no [Firebase Hosting](https://bizu-vegano.web.app/).
