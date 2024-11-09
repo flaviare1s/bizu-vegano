@@ -84,6 +84,9 @@ export const OndeComer = () => {
                     {categoria.categoria === 'salada' && <span className="material-symbols-outlined text-5xl">restaurant_menu</span>}
                     {categoria.categoria === 'bruschetta' && <span className="material-symbols-outlined text-5xl">breakfast_dining</span>}
                     {categoria.categoria === 'focaccia' && <span className="material-symbols-outlined text-5xl">breakfast_dining</span>}
+                    {categoria.categoria === 'mexicana' && <span className="material-symbols-outlined text-5xl">restaurant_menu</span>}
+                    {categoria.categoria === 'arabe' && <span className="material-symbols-outlined text-5xl">bakery_dining</span>}
+                    {categoria.categoria === 'selfservice' && <span className="material-symbols-outlined text-5xl">restaurant_menu</span>}
                     <a href={categoria.url} className='uppercase font-bold mb-5 text-center'>{categoria.nome}</a>
                   </div>
                   <a className='flex items-center gap-2 mt-2 absolute bottom-2 right-3' href={categoria.url}><i className="fa-brands fa-instagram text-2xl"></i></a>
