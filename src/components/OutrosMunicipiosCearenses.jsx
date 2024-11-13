@@ -6,6 +6,7 @@ export const OutrosMunicipiosCearenses = () => {
       <p className="my-2">Alguns restaurantes com opções veganas em outros municípios cearenses são:</p>
       <ul className="list-disc ml-6">
         <li><a href="https://www.instagram.com/casaveg.eco?igsh=MTZ4NW55ZHMwN21kdg==">CasaVeg (100% veg) - Canoa Quebrada</a></li>
+        <li><a href="https://www.instagram.com/recantonovavida_?igsh=ajQ1bXFraHkwbjFq">Recanto Nova Vida (100% veg) - Serra da Ibiapaba</a></li>
         <li><a href="https://www.instagram.com/mezzaluna_canoa?igsh=OXo5M3h4aXc1cWV3">Mezza Luna - Cumbuco</a></li>
         <li><a href="https://www.instagram.com/allmassas?igsh=dXZrcDA4eDIyM2hy">All Massas - Aquiraz</a></li>
         <li><a href="https://www.instagram.com/korea.station.br?igsh=dmtxZHI3ZjdtajRy">Korea Station - Cumbuco</a></li>
