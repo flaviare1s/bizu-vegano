@@ -9,8 +9,8 @@ export const Dicas = () => {
     <main className="mb-4 p-2">
       <section className="flex flex-col gap-4">
         <DicasPorCategoria />
-        <Sopas />
         <OutrosMunicipiosCearenses />
+        <Sopas />
       </section>
       <section className="flex flex-col gap-4 mt-4">
         <Receitas />
