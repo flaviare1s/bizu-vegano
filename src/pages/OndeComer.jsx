@@ -41,7 +41,7 @@ export const OndeComer = () => {
                 <option value="coxinha">Coxinha</option>
                 <option value="acaraje">Acarajé</option>
                 <option value="hamburguer">Hambúrguer</option>
-                <option value="sanduiche">Sanduíches e Wrap</option>
+                <option value="sanduiche">Sanduíche e Wrap</option>
                 <option value="petisco">Petisco</option>
                 <option value="strogonoff">Strogonoff</option>
                 <option value="moqueca">Moqueca</option>
