@@ -54,6 +54,7 @@ export const OndeComer = () => {
                 <option value="mexicana">Comida Mexicana</option>
                 <option value="arabe">Comida Árabe</option>
                 <option value="sopa">Sopa</option>
+                <option value="pratinho">Pratinho</option>
                 <option value="selfservice">Self Service</option>
               </select>
             </div>
@@ -88,6 +89,7 @@ export const OndeComer = () => {
                     {categoria.categoria === 'mexicana' && <span className="material-symbols-outlined text-5xl">restaurant_menu</span>}
                     {categoria.categoria === 'arabe' && <span className="material-symbols-outlined text-5xl">bakery_dining</span>}
                     {categoria.categoria === 'sopa' && <span className="material-symbols-outlined text-5xl">stockpot</span>}
+                    {categoria.categoria === 'pratinho' && <span className="material-symbols-outlined text-5xl">restaurant_menu</span>}
                     {categoria.categoria === 'selfservice' && <span className="material-symbols-outlined text-5xl">restaurant_menu</span>}
                     <a href={categoria.url} className='uppercase font-bold mb-5 text-center'>{categoria.nome}</a>
                   </div>
