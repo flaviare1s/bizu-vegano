@@ -79,7 +79,7 @@ export const Navbar = () => {
                     <Link to='/cafes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Cafés</Link>
                   </li>
                   <li>
-                    <Link to='/onde-comer' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Onde Comer</Link>
+                    <Link to='/onde-comer' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Onde Encontrar</Link>
                   </li>
                 </ul>
               )}
@@ -129,7 +129,7 @@ export const Navbar = () => {
                   <Link to='/cafes' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Cafés</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/onde-comer' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Onde Comer</Link>
+                  <Link to='/onde-comer' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Onde Encontrar</Link>
                 </li>
                 <li className='px-4 py-2'>
                   <Link to='/cosmeticos' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Cosméticos</Link>
