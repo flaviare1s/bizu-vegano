@@ -56,7 +56,7 @@ export const OndeComer = () => {
                 <option value="sopa">Sopa</option>
                 <option value="pratinho">Pratinho</option>
                 <option value="pf">PF / Marmita</option>
-                <option value="congelado">Congelados</option>
+                <option value="congelado">Refeições Congeladas</option>
                 <option value="selfservice">Self Service</option>
               </select>
             </div>
