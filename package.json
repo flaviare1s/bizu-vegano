@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@firebase/auth": "^1.8.2",
+    "@firebase/firestore": "^4.7.6",
+    "@firebase/functions": "^0.12.1",
+    "@firebase/storage": "^0.13.5",
     "bizu-vegano": "file:",
     "firebase": "^10.12.4",
     "react": "^18.3.1",
