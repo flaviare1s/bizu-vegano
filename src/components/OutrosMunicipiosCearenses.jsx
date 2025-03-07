@@ -10,6 +10,7 @@ export const OutrosMunicipiosCearenses = () => {
         <li><a href="https://www.instagram.com/recantonovavida_?igsh=ajQ1bXFraHkwbjFq">Recanto Nova Vida (100% veg) - Serra da Ibiapaba</a></li>
         <li><a href="https://www.instagram.com/grand.vegano?igsh=MXhiZm1kN210ZnNraA==">Grand Vegano (100% veg) - Juazeiro do Norte</a></li>
         <li><a href="https://www.instagram.com/dhararestaurante?igsh=cnpjemlidTJpcjg4">Dhara (vegetariano e vegano) - Icaraizinho de Amontada</a></li>
+        <li><a href="https://www.instagram.com/brotus.veg?igsh=b2hwdTkzbzR5NDUx">Brotus (vegetariano e vegano) - Canoa Quebrada</a></li>
         <li><a href="https://www.instagram.com/mezzaluna_canoa?igsh=OXo5M3h4aXc1cWV3">Mezza Luna - Cumbuco</a></li>
         <li><a href="https://www.instagram.com/allmassas?igsh=dXZrcDA4eDIyM2hy">All Massas - Aquiraz</a></li>
         <li><a href="https://www.instagram.com/korea.station.br?igsh=dmtxZHI3ZjdtajRy">Korea Station - Cumbuco</a></li>
