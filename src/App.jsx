@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import '../src/styles/App.css'
 import { Footer } from './components/Footer'
@@ -17,32 +17,42 @@ import { Emporios } from './pages/Emporios'
 import { Queijarias } from './pages/Queijarias'
 import { CanaisYouTube } from './pages/CanaisYouTube'
 import { Sobre } from './pages/Sobre'
+import { useEffect } from 'react'
+import { initGA, sendPageview } from './analytics'
 
 export const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    initGA();
+  }, []);
+
+  useEffect(() => {
+    sendPageview(location.pathname);
+  }, [location]);
+
 
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/restaurantes' element={<Restaurantes />} />
-            <Route path='/lanchonetes' element={<Lanchonetes />} />
-            <Route path='/confeitarias' element={<Confeitarias />} />
-            <Route path='/emporios' element={<Emporios />} />
-            <Route path='/queijarias' element={<Queijarias />} />
-            <Route path='/festas' element={<Festas />} />
-            <Route path='/sorvetes' element={<Sorvetes />} />
-            <Route path='/cafes' element={<Cafes />} />
-            <Route path='/onde-comer' element={<OndeComer />} />
-            <Route path='/cosmeticos' element={<Cosmeticos />} />
-            <Route path='/dicas' element={<Dicas />} />
-            <Route path='/canais-youtube' element={<CanaisYouTube />} />
-            <Route path='/sobre' element={<Sobre />} />
-            <Route path='*' element={<NotFound />} />
-          </Routes>
-        <Footer />
-      </BrowserRouter>
+      <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/restaurantes' element={<Restaurantes />} />
+          <Route path='/lanchonetes' element={<Lanchonetes />} />
+          <Route path='/confeitarias' element={<Confeitarias />} />
+          <Route path='/emporios' element={<Emporios />} />
+          <Route path='/queijarias' element={<Queijarias />} />
+          <Route path='/festas' element={<Festas />} />
+          <Route path='/sorvetes' element={<Sorvetes />} />
+          <Route path='/cafes' element={<Cafes />} />
+          <Route path='/onde-comer' element={<OndeComer />} />
+          <Route path='/cosmeticos' element={<Cosmeticos />} />
+          <Route path='/dicas' element={<Dicas />} />
+          <Route path='/canais-youtube' element={<CanaisYouTube />} />
+          <Route path='/sobre' element={<Sobre />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      <Footer />
     </>
   )
 }
