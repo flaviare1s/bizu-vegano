@@ -122,43 +122,43 @@ export const Navbar = () => {
             <nav className='h-full overflow-y-auto py-4'>
               <ul className='flex flex-col space-y-1 px-4'>
                 <li>
-                  <Link to='/restaurantes' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Restaurantes</Link>
+                  <Link to='/restaurantes' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Restaurantes</Link>
                 </li>
                 <li>
-                  <Link to='/lanchonetes' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Lanchonetes</Link>
+                  <Link to='/lanchonetes' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Lanchonetes</Link>
                 </li>
                 <li>
-                  <Link to='/confeitarias' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Confeitarias</Link>
+                  <Link to='/confeitarias' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Confeitarias</Link>
                 </li>
                 <li>
-                  <Link to='/emporios' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Empórios e Antepastos</Link>
+                  <Link to='/emporios' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Empórios e Antepastos</Link>
                 </li>
                 <li>
-                  <Link to='/queijarias' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Queijarias</Link>
+                  <Link to='/queijarias' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Queijarias</Link>
                 </li>
                 <li>
-                  <Link to='/festas' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Festas</Link>
+                  <Link to='/festas' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Festas</Link>
                 </li>
                 <li>
-                  <Link to='/sorvetes' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Sorvetes</Link>
+                  <Link to='/sorvetes' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Sorvetes</Link>
                 </li>
                 <li>
-                  <Link to='/cafes' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Cafés</Link>
+                  <Link to='/cafes' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Cafés</Link>
                 </li>
                 <li>
-                  <Link to='/onde-comer' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Onde Encontrar</Link>
+                  <Link to='/onde-comer' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Onde Encontrar</Link>
                 </li>
                 <li className='border-t border-gray-200 mt-2 pt-2'>
-                  <Link to='/cosmeticos' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Cosméticos</Link>
+                  <Link to='/cosmeticos' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Cosméticos</Link>
                 </li>
                 <li>
-                  <Link to='/dicas' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Dicas</Link>
+                  <Link to='/dicas' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Dicas</Link>
                 </li>
                 <li>
-                  <Link to='/canais-youtube' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Canais YouTube</Link>
+                  <Link to='/canais-youtube' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Canais YouTube</Link>
                 </li>
                 <li>
-                  <Link to='/sobre' className='block px-4 py-2.5 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Sobre</Link>
+                  <Link to='/sobre' className='block px-4 py-2 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Sobre</Link>
                 </li>
               </ul>
             </nav>
