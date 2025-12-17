@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
-import iconMenuOpen from '../assets/icon-menu.svg'
-import iconMenuClose from '../assets/icon-menu-close.svg'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { useState, useEffect, useRef } from 'react'
 
 export const Navbar = () => {
@@ -50,7 +49,7 @@ export const Navbar = () => {
           <ul className='hidden md:flex md:flex-wrap items-center md:space-x-4 md:text-sm'>
             <li className='relative'>
               <button onClick={toggleDropdown} className='text-branco-quente font-semibold hover:opacity-80 uppercase flex items-center focus:outline-none'>
-                Alimentação <span className="material-symbols-outlined">keyboard_arrow_down</span>
+                Alimentação <ChevronDown size={20} />
               </button>
               {isDropdownOpen && (
                 <ul ref={dropdownRef} className='absolute bg-branco-quente text-verde-escuro text-lg mt-2 pt-2 space-y-2 shadow-lg rounded font-medium'>
@@ -99,7 +98,7 @@ export const Navbar = () => {
           </ul>
           <button onClick={toggleMenu} className='md:hidden focus:outline-none sm:mr-2 flex items-center gap-2'>
             <p className='text-branco-quente text-base font-semibold md:hidden'>MENU</p>
-            <img className='cursor-pointer md:hidden' src={isMenuOpen ? iconMenuClose : iconMenuOpen} alt="menu" />
+            {isMenuOpen ? <X size={24} className='text-branco-quente' /> : <Menu size={24} className='text-branco-quente' />}
           </button>
           {isMenuOpen && (
             <div className='absolute top-[80px] sm:top-[90px] right-0 w-[250px] z-40 shadow-md lg:hidden'>
