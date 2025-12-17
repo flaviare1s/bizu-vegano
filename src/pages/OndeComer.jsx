@@ -26,7 +26,7 @@ export const OndeComer = () => {
     <div className="flex flex-col min-h-screen">
       <main className='flex grow'>
         <section className='flex flex-col items-center my-6 px-4 w-full'>
-          <h1 className='text-3xl md:text-5xl text-verde-escuro font-bold my-4 md:my-6'>Onde Comer:</h1>
+          <h1 className='text-3xl md:text-5xl text-verde-escuro font-bold my-4 md:my-6'>Onde Encontrar:</h1>
           <div className='flex items-center justify-center gap-2 mb-6'>
             <div className='flex flex-col'>
               <h6 className='text-verde-escuro font-semibold mb-2'>Filtrar por Categoria:</h6>
@@ -68,58 +68,26 @@ export const OndeComer = () => {
           {loading ? (
             <Loader />
           ) : (
-            <article className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full max-w-[1400px]'>
+              <article className='max-w-[870px] w-full px-4 justify-items-start mx-auto'>
               {categorias.map(categoria => (
-                <div key={categoria.id} className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full'>
-                  <div className='p-6 flex-grow'>
-                    <div className='flex items-center gap-4 mb-4'>
-                      <div className='w-14 h-14 bg-gradient-to-br from-verde-salvia to-verde-oliva rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
-                        {categoria.categoria === 'pizza' && <span className="material-symbols-outlined text-white text-2xl">local_pizza</span>}
-                        {categoria.categoria === 'oriental' && <span className="material-symbols-outlined text-white text-2xl">ramen_dining</span>}
-                        {categoria.categoria === 'poke' && <span className="material-symbols-outlined text-white text-2xl">ramen_dining</span>}
-                        {categoria.categoria === 'notdog' && <span className="material-symbols-outlined text-white text-2xl">lunch_dining</span>}
-                        {categoria.categoria === 'lasanha' && <span className="material-symbols-outlined text-white text-2xl">dinner_dining</span>}
-                        {categoria.categoria === 'massa' && <span className="material-symbols-outlined text-white text-2xl">dinner_dining</span>}
-                        {categoria.categoria === 'pastel' && <span className="material-symbols-outlined text-white text-2xl">skillet_cooktop</span>}
-                        {categoria.categoria === 'coxinha' && <span className="material-symbols-outlined text-white text-2xl">skillet_cooktop</span>}
-                        {categoria.categoria === 'acaraje' && <span className="material-symbols-outlined text-white text-2xl">stockpot</span>}
-                        {categoria.categoria === 'hamburguer' && <span className="material-symbols-outlined text-white text-2xl">lunch_dining</span>}
-                        {categoria.categoria === 'sanduiche' && <span className="material-symbols-outlined text-white text-2xl">lunch_dining</span>}
-                        {categoria.categoria === 'petisco' && <span className="material-symbols-outlined text-white text-2xl">restaurant</span>}
-                        {categoria.categoria === 'strogonoff' && <span className="material-symbols-outlined text-white text-2xl">cooking</span>}
-                        {categoria.categoria === 'moqueca' && <span className="material-symbols-outlined text-white text-2xl">cooking</span>}
-                        {categoria.categoria === 'risoto' && <span className="material-symbols-outlined text-white text-2xl">cooking</span>}
-                        {categoria.categoria === 'feijoada' && <span className="material-symbols-outlined text-white text-2xl">stockpot</span>}
-                        {categoria.categoria === 'batatarecheada' && <span className="material-symbols-outlined text-white text-2xl">bakery_dining</span>}
-                        {categoria.categoria === 'salada' && <span className="material-symbols-outlined text-white text-2xl">restaurant_menu</span>}
-                        {categoria.categoria === 'bruschetta' && <span className="material-symbols-outlined text-white text-2xl">breakfast_dining</span>}
-                        {categoria.categoria === 'focaccia' && <span className="material-symbols-outlined text-white text-2xl">breakfast_dining</span>}
-                        {categoria.categoria === 'mexicana' && <span className="material-symbols-outlined text-white text-2xl">restaurant_menu</span>}
-                        {categoria.categoria === 'arabe' && <span className="material-symbols-outlined text-white text-2xl">bakery_dining</span>}
-                        {categoria.categoria === 'sopa' && <span className="material-symbols-outlined text-white text-2xl">stockpot</span>}
-                        {categoria.categoria === 'pratinho' && <span className="material-symbols-outlined text-white text-2xl">restaurant_menu</span>}
-                        {categoria.categoria === 'pf' && <span className="material-symbols-outlined text-white text-2xl">restaurant_menu</span>}
-                        {categoria.categoria === 'congelado' && <span className="material-symbols-outlined text-white text-2xl">restaurant_menu</span>}
-                        {categoria.categoria === 'selfservice' && <span className="material-symbols-outlined text-white text-2xl">restaurant_menu</span>}
+                <a
+                  key={categoria.id}
+                  href={categoria.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className='flex flex-col group'
+                >
+                  <div className='p-3 flex-grow items-center'>
+                    <div className='flex items-center gap-4'>
+                      <div className='w-10 h-10 bg-gradient-to-br from-verde-salvia to-verde-oliva rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
+                        <i className="fa-brands fa-instagram text-branco-quente text-2xl"></i>
                       </div>
                       <div className='flex-1 min-w-0'>
-                        <h3 className='font-bold text-lg text-gray-800 leading-tight mb-1'>{categoria.nome}</h3>
+                        <h3 className='font-bold text-lg text-gray-800 group-hover:text-verde-oliva leading-tight mb-1 transition-colors duration-200'>{categoria.nome}</h3>
                       </div>
                     </div>
                   </div>
-
-                  <div className='p-6 pt-0 mt-auto'>
-                    <a
-                      href={categoria.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className='w-full bg-verde-oliva hover:bg-verde-escuro text-white px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 font-semibold text-sm shadow-md hover:shadow-lg'
-                    >
-                      <i className="fa-brands fa-instagram text-xl"></i>
-                      Ver no Instagram
-                    </a>
-                  </div>
-                </div>
+                </a>
               ))}
             </article>
           )}
