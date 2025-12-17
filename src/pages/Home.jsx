@@ -14,7 +14,7 @@ import { LinkCategoria } from '../components/LinkCategoria'
 
 export const Home = () => {
   return (
-    <main className='flex flex-col justify-center items-center gap-1 m-auto md:grid grid-cols-3 md:px-[30px] md:py-[30px] lg:px-[100px] bg-verde-escuro'>
+    <main className='flex flex-col justify-center items-center gap-1 m-auto md:grid grid-cols-3 px-1 md:px-[30px] md:py-[30px] lg:px-[100px] bg-verde-escuro pb-2'>
       <LinkCategoria link='/restaurantes' titulo='Restaurantes' img={ restaurantes } />
       <LinkCategoria link='/lanchonetes' titulo='Lanchonetes' img={ lanchonetes } />
       <LinkCategoria link='/confeitarias' titulo='Confeitarias' img={ confeitarias } />
