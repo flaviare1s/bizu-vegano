@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
-        Playwrite: ["Playwrite US Trad", "serif"],
+        logomarca: ["Nothing You Could Do", "cursive"],
       },
       colors: {
         "verde-oliva": "#6b8e23",
