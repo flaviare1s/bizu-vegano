@@ -31,9 +31,11 @@ export const CanaisYouTube = () => {
       ) : (
         <article className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full max-w-[1400px]'>
           {canais.map(canal => (
-            <div key={canal.id} className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full'>
+            <a href={canal.url}
+              target="_blank"
+              rel="noopener noreferrer" key={canal.id} className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full'>
               <div className='p-6 flex-grow'>
-                <div className='flex items-center gap-4 mb-4'>
+                <div className='flex items-center gap-4'>
                   <div className='w-14 h-14 bg-gradient-to-br from-verde-salvia to-verde-escuro rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
                     <i className="fa-brands fa-youtube text-white text-xl"></i>
                   </div>
@@ -42,19 +44,7 @@ export const CanaisYouTube = () => {
                   </div>
                 </div>
               </div>
-
-              <div className='p-6 pt-0 mt-auto'>
-                <a
-                  href={canal.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className='w-full bg-verde-oliva hover:bg-verde-escuro text-white px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 font-semibold text-sm shadow-md hover:shadow-lg'
-                >
-                  <i className="fa-brands fa-youtube text-xl"></i>
-                  Ver no YouTube
-                </a>
-              </div>
-            </div>
+            </a>
           ))}
         </article>
       )}
