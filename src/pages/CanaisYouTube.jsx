@@ -31,7 +31,7 @@ export const CanaisYouTube = () => {
           {canais.map(canal => (
             <div key={canal.id} className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full'>
               <div className='p-6 flex-grow'>
-                <div className='flex items-start gap-4 mb-4'>
+                <div className='flex items-center gap-4 mb-4'>
                   <div className='w-14 h-14 bg-gradient-to-br from-verde-salvia to-verde-oliva rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
                     <i className="fa-brands fa-youtube text-white text-xl"></i>
                   </div>

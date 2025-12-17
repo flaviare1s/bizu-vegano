@@ -72,7 +72,7 @@ export const OndeComer = () => {
               {categorias.map(categoria => (
                 <div key={categoria.id} className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full'>
                   <div className='p-6 flex-grow'>
-                    <div className='flex items-start gap-4 mb-4'>
+                    <div className='flex items-center gap-4 mb-4'>
                       <div className='w-14 h-14 bg-gradient-to-br from-verde-salvia to-verde-oliva rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
                         {categoria.categoria === 'pizza' && <span className="material-symbols-outlined text-white text-2xl">local_pizza</span>}
                         {categoria.categoria === 'oriental' && <span className="material-symbols-outlined text-white text-2xl">ramen_dining</span>}
