@@ -102,43 +102,43 @@ export const Navbar = () => {
           {isMenuOpen && (
             <div className='absolute top-[80px] sm:top-[90px] right-0 w-[250px] z-40 shadow-md lg:hidden'>
               <ul className='flex flex-col'>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3 mt-2'>
                   <Link to='/restaurantes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Restaurantes</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/lanchonetes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Lanchonetes</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/confeitarias' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Confeitarias</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/emporios' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Empórios e Antepastos</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/queijarias' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Queijarias</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/festas' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Festas</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/sorvetes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Sorvetes</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/cafes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Cafés</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/onde-comer' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Onde Encontrar</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/cosmeticos' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Cosméticos</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/dicas' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Dicas</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/canais-youtube' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Canais YouTube</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-3'>
                   <Link to='/sobre' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Sobre</Link>
                 </li>
               </ul>
