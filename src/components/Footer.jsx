@@ -12,7 +12,7 @@ export const Footer = () => {
           </div>
 
           <div className="text-center">
-            <h4 className="text-lg font-semibold mb-4 text-verde-salvia">Links Rápidos</h4>
+            <h4 className="text-lg font-semibold mb-4 text-logo">Links Rápidos</h4>
             <nav className="flex flex-col gap-2">
               <a href="/restaurantes" className="text-sm text-gray-300 hover:text-logo transition-colors">Restaurantes</a>
               <a href="/lanchonetes" className="text-sm text-gray-300 hover:text-logo transition-colors">Lanchonetes</a>
@@ -22,7 +22,7 @@ export const Footer = () => {
           </div>
 
           <div className="text-center md:text-right">
-            <h4 className="text-lg font-semibold mb-4 text-verde-salvia">Siga-nos</h4>
+            <h4 className="text-lg font-semibold mb-4 text-logo">Siga-nos</h4>
             <div className="flex justify-center md:justify-end gap-4 mb-4">
               <a
                 href="https://www.instagram.com/bizu_vegano_fortaleza?igsh=MWxhdXpkdHJybTlxeA=="
@@ -31,7 +31,7 @@ export const Footer = () => {
                 className="w-12 h-12 flex items-center justify-center"
                 aria-label="Instagram do Bizu Vegano"
               >
-                <i className="fa-brands fa-instagram text-verde-salvia hover:text-logo text-3xl"></i>
+                <i className="fa-brands fa-instagram text-logo hover:text-4xl text-3xl"></i>
               </a>
             </div>
             <p className="text-xs text-gray-400">
@@ -48,7 +48,7 @@ export const Footer = () => {
             <p>
               Desenvolvido por{' '}
               <a
-                className="font-semibold text-logo hover:text-verde-salvia transition-colors"
+                className="font-semibold text-logo hover:text-logo transition-colors"
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=flaviarster@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
