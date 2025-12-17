@@ -60,7 +60,7 @@ export const Navbar = () => {
       <section className='bg-verde-escuro flex justify-between items-center w-full px-5 relative h-[80px] sm:h-[90px] z-50'>
         <Link to='/' className='h-[60px] sm:h-[75px] flex items-center gap-2' onClick={closeMenu}>
           <img className='h-full rounded-s-full pr-1' src={logo} alt="logo" />
-          <h1 className='font-logomarca text-2xl md:text-xl lg:text-2xl font-bold text-logo'>Bizu Vegano</h1>
+          <h1 className='font-logomarca text-3xl md:text-2xl lg:text-3xl font-bold text-logo'>Bizu Vegano</h1>
         </Link>
         <nav className='flex items-center mr-4'>
           <ul className='hidden md:flex md:flex-wrap items-center md:space-x-6 md:text-sm'>
