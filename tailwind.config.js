@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'IBM': ['IBM Plex Mono', 'monospace'],
-        'Playwrite': ['Playwrite DK Uloopet', 'sans-serif'],
+        'Montserrat': ['Montserrat', 'sans-serif'],
+        'Playwrite': ['Playwrite US Trad', 'serif'],
       },
       colors: {
         'verde-oliva': '#6b8e23',

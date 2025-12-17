@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #3F4D34;
   display: flex;
   flex-direction: column;

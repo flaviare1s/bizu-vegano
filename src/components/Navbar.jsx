@@ -53,7 +53,7 @@ export const Navbar = () => {
                 Alimentação <span className="material-symbols-outlined">keyboard_arrow_down</span>
               </button>
               {isDropdownOpen && (
-                <ul ref={dropdownRef} className='absolute bg-branco-quente text-verde-oliva mt-2 pt-2 space-y-2 shadow-lg rounded'>
+                <ul ref={dropdownRef} className='absolute bg-branco-quente text-verde-oliva mt-2 pt-2 space-y-2 shadow-lg rounded font-medium'>
                   <li>
                     <Link to='/restaurantes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Restaurantes</Link>
                   </li>
