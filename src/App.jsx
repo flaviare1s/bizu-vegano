@@ -19,6 +19,7 @@ import { CanaisYouTube } from './pages/CanaisYouTube'
 import { Sobre } from './pages/Sobre'
 import { useEffect } from 'react'
 import { initGA, sendPageview } from './analytics'
+import { ScrollToTop } from './components/ScrollToTop'
 
 export const App = () => {
   const location = useLocation();
@@ -35,6 +36,7 @@ export const App = () => {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/restaurantes' element={<Restaurantes />} />
