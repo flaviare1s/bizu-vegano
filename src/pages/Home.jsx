@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom'
 
 export const Home = () => {
   return (
-    <main className='flex flex-col justify-center items-center gap-1 m-auto mb-2 md:grid grid-cols-3 md:px-[30px] md:py-[30px] lg:px-[100px]'>
+    <main className='flex flex-col justify-center items-center gap-1 m-auto mb-2 md:grid grid-cols-3 md:px-[30px] md:py-[30px] lg:px-[100px] bg-verde-escuro'>
       <Link to='/restaurantes' className='w-full border border-branco-quente rounded relative'>
         <img className='h-[200px] w-full object-cover rounded' src={ restaurantes } alt="Imagem de comida vegetariana" />
         <h2 className='text-center text-2xl font-semibold text-branco-quente absolute bottom-[10px] right-[20px]'>Restaurantes</h2>
