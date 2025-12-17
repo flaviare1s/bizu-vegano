@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="bg-verde-escuro text-branco-quente text-center p-4 font-medium">
+    <footer className="bg-verde-escuro text-branco-quente text-center p-4 font-medium shadow">
       <small>© 2024 Bizu Vegano
         <br /> 
         Desenvolvido por  
