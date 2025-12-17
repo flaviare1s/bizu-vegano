@@ -4,7 +4,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold mb-4 text-logo">Bizu Vegano</h3>
+            <h3 className="text-2xl font-bold mb-4 text-logo font-logomarca">Bizu Vegano</h3>
             <p className="text-sm text-gray-300 leading-relaxed">
               Seu guia completo para encontrar as melhores opções veganas em Fortaleza e região.
               Descubra restaurantes, lanchonetes, confeitarias e muito mais!
