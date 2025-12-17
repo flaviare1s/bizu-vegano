@@ -114,7 +114,7 @@ export const Navbar = () => {
             </li>
           </ul>
           <button onClick={toggleMenu} className='md:hidden focus:outline-none flex items-center gap-2 z-50'>
-            {isMenuOpen ? <X size={30} className='text-logo' /> : <Menu size={30} className='text-logo' />}
+            {isMenuOpen ? <X size={35} className='text-logo' /> : <Menu size={35} className='text-logo' />}
           </button>
 
           {/* Menu Mobile Lateral */}
