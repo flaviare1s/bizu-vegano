@@ -45,10 +45,15 @@ export const Queijarias = () => {
                     <p className='text-gray-600 text-sm leading-relaxed mb-4 font-semibold'>{queijaria.descricao}</p>
 
                     {queijaria.endereco && (
-                      <div className='flex items-start gap-2 text-xs text-gray-500 bg-gray-50 rounded-lg p-3'>
+                      <a
+                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(queijaria.endereco)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='flex items-start gap-2 text-xs text-gray-500 bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-colors cursor-pointer'
+                      >
                         <i className="fa-solid fa-map-marker-alt text-verde-oliva mt-0.5"></i>
-                        <span className='font-medium'>{queijaria.endereco}</span>
-                      </div>
+                        <span className='font-medium hover:text-verde-oliva transition-colors'>{queijaria.endereco}</span>
+                      </a>
                     )}
                   </div>
 
