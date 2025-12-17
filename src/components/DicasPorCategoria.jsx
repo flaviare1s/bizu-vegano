@@ -49,32 +49,23 @@ export const DicasPorCategoria = () => {
         {loading ? (
           <Loader />
         ) : (
-          <article className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-[1400px] w-full px-4'>
+          <article className='max-w-[870px] w-full px-4 justify-items-start mx-auto'>
             {categorias.map(categoria => (
-              <div key={categoria.id} className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full'>
-                <div className='p-6 flex-grow'>
-                  <div className='flex items-center gap-4 mb-4'>
-                    <div className='w-14 h-14 bg-gradient-to-br from-verde-salvia to-verde-oliva rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
-                      <i className="fa-solid fa-lightbulb text-white text-xl"></i>
+              <a href={categoria.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={categoria.id} className='flex flex-col h-full group'>
+                <div className='p-4 flex-grow'>
+                  <div className='flex items-center gap-4'>
+                    <div className='w-10 h-10 bg-gradient-to-br from-verde-salvia to-verde-oliva rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
+                      <i className="fa-brands fa-instagram text-branco-quente text-2xl"></i>
                     </div>
                     <div className='flex-1 min-w-0'>
-                      <h3 className='font-bold text-lg text-gray-800 leading-tight mb-1'>{categoria.nome}</h3>
+                      <h3 className='font-bold text-lg text-gray-800 group-hover:text-verde-oliva leading-tight mb-1 transition-colors duration-200'>{categoria.nome}</h3>
                     </div>
                   </div>
                 </div>
-
-                <div className='p-6 pt-0 mt-auto'>
-                  <a
-                    href={categoria.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className='w-full bg-verde-oliva hover:bg-verde-escuro text-white px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 font-semibold text-sm shadow-md hover:shadow-lg'
-                  >
-                    <i className="fa-brands fa-instagram text-xl"></i>
-                    Ver no Instagram
-                  </a>
-                </div>
-              </div>
+              </a>
             ))}
           </article>
         )}
