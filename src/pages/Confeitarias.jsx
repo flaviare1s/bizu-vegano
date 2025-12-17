@@ -42,7 +42,7 @@ export const Confeitarias = () => {
 
                 <p className='text-gray-600 text-sm leading-relaxed mb-4 font-semibold'>{confeitaria.descricao}</p>
 
-                {confeitaria.endereco && (
+                {confeitaria.endereco ? (
                   <a
                     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(confeitaria.endereco)}`}
                     target="_blank"
@@ -52,6 +52,8 @@ export const Confeitarias = () => {
                     <i className="fa-solid fa-map-marker-alt text-verde-oliva mt-0.5"></i>
                     <span className='font-medium hover:text-verde-oliva transition-colors'>{confeitaria.endereco}</span>
                   </a>
+                ) : (
+                  <p className='text-xs text-gray-400 italic'>Endereço não fornecido</p>
                 )}
               </div>
 

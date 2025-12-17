@@ -42,7 +42,7 @@ export const Festas = () => {
 
                 <p className='text-gray-600 text-sm leading-relaxed mb-4 font-semibold'>{festa.descricao}</p>
 
-                {festa.endereco && (
+                {festa.endereco ? (
                   <a
                     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(festa.endereco)}`}
                     target="_blank"
@@ -52,6 +52,8 @@ export const Festas = () => {
                     <i className="fa-solid fa-map-marker-alt text-verde-oliva mt-0.5"></i>
                     <span className='font-medium hover:text-verde-oliva transition-colors'>{festa.endereco}</span>
                   </a>
+                ) : (
+                  <p className='text-xs text-gray-400 italic'>Endereço não fornecido</p>
                 )}
               </div>
 

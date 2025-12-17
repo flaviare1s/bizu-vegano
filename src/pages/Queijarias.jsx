@@ -44,7 +44,7 @@ export const Queijarias = () => {
 
                     <p className='text-gray-600 text-sm leading-relaxed mb-4 font-semibold'>{queijaria.descricao}</p>
 
-                    {queijaria.endereco && (
+                    {queijaria.endereco ? (
                       <a
                         href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(queijaria.endereco)}`}
                         target="_blank"
@@ -54,6 +54,8 @@ export const Queijarias = () => {
                         <i className="fa-solid fa-map-marker-alt text-verde-oliva mt-0.5"></i>
                         <span className='font-medium hover:text-verde-oliva transition-colors'>{queijaria.endereco}</span>
                       </a>
+                    ) : (
+                      <p className='text-xs text-gray-400 italic'>Endereço não fornecido</p>
                     )}
                   </div>
 

@@ -44,7 +44,7 @@ export const Sorvetes = () => {
 
                     <p className='text-gray-600 text-sm leading-relaxed mb-4 font-semibold'>{sorvete.descricao}</p>
 
-                    {sorvete.endereco && (
+                    {sorvete.endereco ? (
                       <a
                         href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(sorvete.endereco)}`}
                         target="_blank"
@@ -54,6 +54,8 @@ export const Sorvetes = () => {
                         <i className="fa-solid fa-map-marker-alt text-verde-oliva mt-0.5"></i>
                         <span className='font-medium hover:text-verde-oliva transition-colors'>{sorvete.endereco}</span>
                       </a>
+                    ) : (
+                      <p className='text-xs text-gray-400 italic'>Endereço não fornecido</p>
                     )}
                   </div>
 
