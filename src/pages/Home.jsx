@@ -26,7 +26,7 @@ export const Home = () => {
       <LinkCategoria link='/onde-comer' titulo='Onde comer' img={ ondeComer } />
       <LinkCategoria link='/cosmeticos' titulo='Cosméticos' img={ cosmeticos } />
       <LinkCategoria link='/dicas' titulo='Dicas' img={ dicas } />
-      <LinkCategoria link='/canais' titulo='Canais' img={ canais } />
+      <LinkCategoria link='/canais-youtube' titulo='Canais YouTube' img={ canais } />
     </main>
   )
 }
