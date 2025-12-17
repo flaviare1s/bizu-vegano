@@ -45,7 +45,7 @@ export const Cafes = () => {
                 {cafe.endereco && (
                   <div className='flex items-start gap-2 text-xs text-gray-500 bg-gray-50 rounded-lg p-3'>
                     <i className="fa-solid fa-map-marker-alt text-verde-oliva mt-0.5"></i>
-                    <span>{cafe.endereco}</span>
+                    <span className='font-medium'>{cafe.endereco}</span>
                   </div>
                 )}
               </div>

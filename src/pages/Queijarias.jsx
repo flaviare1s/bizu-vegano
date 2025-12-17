@@ -47,7 +47,7 @@ export const Queijarias = () => {
                     {queijaria.endereco && (
                       <div className='flex items-start gap-2 text-xs text-gray-500 bg-gray-50 rounded-lg p-3'>
                         <i className="fa-solid fa-map-marker-alt text-verde-oliva mt-0.5"></i>
-                        <span>{queijaria.endereco}</span>
+                        <span className='font-medium'>{queijaria.endereco}</span>
                       </div>
                     )}
                   </div>
