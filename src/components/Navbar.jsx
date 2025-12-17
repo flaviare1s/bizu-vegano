@@ -46,9 +46,9 @@ export const Navbar = () => {
           <h1 className='font-Playwrite text-xl lg:text-2xl font-bold text-logo underline'>Bizu Vegano</h1>
         </Link>
         <nav className='flex items-center mr-4'>
-          <ul className='hidden md:flex md:flex-wrap items-center md:space-x-4 md:text-sm'>
+          <ul className='hidden md:flex md:flex-wrap items-center md:space-x-6 md:text-sm'>
             <li className='relative'>
-              <button onClick={toggleDropdown} className='text-logo lg:text-lg font-semibold hover:opacity-80 flex items-center focus:outline-none'>
+              <button onClick={toggleDropdown} className='text-logo lg:text-lg font-semibold hover:opacity-80 flex items-center focus:outline-none link-nav'>
                 Alimentação <ChevronDown size={20} />
               </button>
               {isDropdownOpen && (
@@ -84,16 +84,16 @@ export const Navbar = () => {
               )}
             </li>
             <li>
-              <Link to='/cosmeticos' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80' onClick={closeMenu}>Cosméticos</Link>
+              <Link to='/cosmeticos' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80 link-nav' onClick={closeMenu}>Cosméticos</Link>
             </li>
             <li>
-              <Link to='/dicas' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80' onClick={closeMenu}>Dicas</Link>
+              <Link to='/dicas' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80 link-nav' onClick={closeMenu}>Dicas</Link>
             </li>
             <li>
-              <Link to='/canais-youtube' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80' onClick={closeMenu}>Canais YouTube</Link>
+              <Link to='/canais-youtube' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80 link-nav' onClick={closeMenu}>Canais YouTube</Link>
             </li>
             <li>
-              <Link to='/sobre' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80' onClick={closeMenu}>Sobre</Link>
+              <Link to='/sobre' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80 link-nav' onClick={closeMenu}>Sobre</Link>
             </li>
           </ul>
           <button onClick={toggleMenu} className='md:hidden focus:outline-none sm:mr-2 flex items-center gap-2'>
