@@ -41,7 +41,7 @@ export const Navbar = () => {
   return (
     <header className='bg-branco-quente w-screen flex justify-between items-center mx-auto relative z-50'>
       {isMenuOpen && <div className='overlay bg-black opacity-80 absolute top-0 left-0 w-screen h-screen z-30 pointer-events-none'></div>}
-      <section className='bg-branco-quente flex justify-between items-center w-full px-5 relative h-[80px] sm:h-[90px] z-40'>
+      <section className='bg-white flex justify-between items-center w-full px-5 relative h-[80px] sm:h-[90px] z-40'>
         <Link to='/' className='h-[70px] sm:h-[85px] flex items-center' onClick={closeMenu}>
           <img className='h-full rounded-s-full pr-1' src={logo} alt="logo" />
           <h1 className='font-Playwrite text-xl md:text-2xl font-bold text-verde-oliva'>Bizu Vegano</h1>
