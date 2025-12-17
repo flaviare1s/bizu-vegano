@@ -41,18 +41,18 @@ export const Navbar = () => {
     <header className='bg-verde-escuro w-screen flex justify-between items-center mx-auto relative z-50 shadow-md'>
       {isMenuOpen && <div className='overlay bg-black opacity-80 absolute top-0 left-0 w-screen h-screen z-30 pointer-events-none'></div>}
       <section className='bg-verde-escuro flex justify-between items-center w-full px-5 relative h-[80px] sm:h-[90px] z-40'>
-        <Link to='/' className='h-[70px] sm:h-[85px] flex items-center' onClick={closeMenu}>
+        <Link to='/' className='h-[60px] sm:h-[75px] flex items-center' onClick={closeMenu}>
           <img className='h-full rounded-s-full pr-1' src={logo} alt="logo" />
-          <h1 className='font-Playwrite text-xl md:text-2xl font-bold text-branco-quente underline'>Bizu Vegano</h1>
+          <h1 className='font-Playwrite text-xl lg:text-2xl font-bold text-logo underline'>Bizu Vegano</h1>
         </Link>
         <nav className='flex items-center mr-4'>
           <ul className='hidden md:flex md:flex-wrap items-center md:space-x-4 md:text-sm'>
             <li className='relative'>
-              <button onClick={toggleDropdown} className='text-branco-quente font-semibold hover:opacity-80 uppercase flex items-center focus:outline-none'>
+              <button onClick={toggleDropdown} className='text-logo lg:text-lg font-semibold hover:opacity-80 flex items-center focus:outline-none'>
                 Alimentação <ChevronDown size={20} />
               </button>
               {isDropdownOpen && (
-                <ul ref={dropdownRef} className='absolute bg-white text-verde-escuro text-lg mt-2 pt-2 space-y-2 shadow-lg rounded font-medium shadow-md'>
+                <ul ref={dropdownRef} className='absolute bg-white text-verde-escuro text-lg mt-2 pt-2 space-y-2 shadow-lg rounded font-medium'>
                   <li>
                     <Link to='/restaurantes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Restaurantes</Link>
                   </li>
@@ -84,63 +84,63 @@ export const Navbar = () => {
               )}
             </li>
             <li>
-              <Link to='/cosmeticos' className='text-branco-quente md:text-branco-quente font-semibold hover:opacity-80 uppercase' onClick={closeMenu}>Cosméticos</Link>
+              <Link to='/cosmeticos' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80' onClick={closeMenu}>Cosméticos</Link>
             </li>
             <li>
-              <Link to='/dicas' className='text-branco-quente md:text-branco-quente font-semibold hover:opacity-80 uppercase' onClick={closeMenu}>Dicas</Link>
+              <Link to='/dicas' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80' onClick={closeMenu}>Dicas</Link>
             </li>
             <li>
-              <Link to='/canais-youtube' className='text-branco-quente md:text-branco-quente font-semibold hover:opacity-80 uppercase' onClick={closeMenu}>Canais YouTube</Link>
+              <Link to='/canais-youtube' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80' onClick={closeMenu}>Canais YouTube</Link>
             </li>
             <li>
-              <Link to='/sobre' className='text-branco-quente md:text-branco-quente font-semibold hover:opacity-80 uppercase' onClick={closeMenu}>Sobre</Link>
+              <Link to='/sobre' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80' onClick={closeMenu}>Sobre</Link>
             </li>
           </ul>
           <button onClick={toggleMenu} className='md:hidden focus:outline-none sm:mr-2 flex items-center gap-2'>
-            <p className='text-branco-quente text-base font-semibold md:hidden'>MENU</p>
-            {isMenuOpen ? <X size={24} className='text-branco-quente' /> : <Menu size={24} className='text-branco-quente' />}
+            <p className='text-logo text-base font-semibold md:hidden'>MENU</p>
+            {isMenuOpen ? <X size={24} className='text-logo' /> : <Menu size={24} className='text-logo' />}
           </button>
           {isMenuOpen && (
             <div className='absolute top-[80px] sm:top-[90px] right-0 w-[250px] z-40 shadow-md lg:hidden'>
               <ul className='flex flex-col'>
                 <li className='px-4 py-2'>
-                  <Link to='/restaurantes' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Restaurantes</Link>
+                  <Link to='/restaurantes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Restaurantes</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/lanchonetes' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Lanchonetes</Link>
+                  <Link to='/lanchonetes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Lanchonetes</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/confeitarias' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Confeitarias</Link>
+                  <Link to='/confeitarias' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Confeitarias</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/emporios' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Empórios e Antepastos</Link>
+                  <Link to='/emporios' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Empórios e Antepastos</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/queijarias' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Queijarias</Link>
+                  <Link to='/queijarias' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Queijarias</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/festas' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Festas</Link>
+                  <Link to='/festas' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Festas</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/sorvetes' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Sorvetes</Link>
+                  <Link to='/sorvetes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Sorvetes</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/cafes' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Cafés</Link>
+                  <Link to='/cafes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Cafés</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/onde-comer' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Onde Encontrar</Link>
+                  <Link to='/onde-comer' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Onde Encontrar</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/cosmeticos' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Cosméticos</Link>
+                  <Link to='/cosmeticos' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Cosméticos</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/dicas' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Dicas</Link>
+                  <Link to='/dicas' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Dicas</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/canais-youtube' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Canais YouTube</Link>
+                  <Link to='/canais-youtube' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Canais YouTube</Link>
                 </li>
                 <li className='px-4 py-2'>
-                  <Link to='/sobre' className='text-branco-quente font-semibold hover:opacity-80' onClick={closeMenu}>Sobre</Link>
+                  <Link to='/sobre' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Sobre</Link>
                 </li>
               </ul>
             </div>
