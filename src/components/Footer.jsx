@@ -31,7 +31,7 @@ export const Footer = () => {
                 className="w-12 h-12 flex items-center justify-center"
                 aria-label="Instagram do Bizu Vegano"
               >
-                <i className="fa-brands fa-instagram text-logo text-3xl"></i>
+                <i className="fa-brands fa-instagram text-verde-salvia hover:text-logo text-3xl"></i>
               </a>
             </div>
             <p className="text-xs text-gray-400">
