@@ -25,7 +25,9 @@ export const Queijarias = () => {
     <div className="flex flex-col min-h-screen">
       <main className='flex grow'>
         <section className='flex flex-col items-center my-6 px-4 w-full'>
-          <h1 className='text-3xl md:text-5xl text-verde-escuro font-bold my-4 md:my-6'>Queijarias</h1>
+          <div className='border-b-2 border-logo w-full mb-5'>
+            <h1 className='text-2xl text-center md:text-4xl text-verde-escuro font-bold my-4 md:my-6'>Queijarias</h1>
+          </div>
           {loading ? (
             <Loader />
           ) : (

@@ -23,7 +23,9 @@ export const Cosmeticos = () => {
 
   return (
     <section className='flex flex-col justify-center items-center my-6 px-4'>
-      <h1 className='text-3xl md:text-5xl text-verde-escuro font-bold my-4 md:my-6'>Cosméticos e Beleza</h1>
+      <div className='border-b-2 border-logo w-full mb-5'>
+        <h1 className='text-2xl text-center md:text-4xl text-verde-escuro font-bold my-4 md:my-6'>Cosméticos e Beleza</h1>
+      </div>
       {loading ? (
         <Loader />
       ) : (
