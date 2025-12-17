@@ -23,7 +23,7 @@ export const Emporios = () => {
 
   return (
     <section className='flex flex-col justify-center items-center my-6 px-4'>
-      <h1 className='text-3xl md:text-5xl uppercase text-branco-quente font-bold my-4 md:my-6'>Empórios e Antepastos</h1>
+      <h1 className='text-3xl md:text-5xl text-verde-escuro font-bold my-4 md:my-6'>Empórios e Antepastos</h1>
       {loading ? (
         <Loader />
       ) : (

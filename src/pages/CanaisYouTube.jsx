@@ -23,7 +23,7 @@ export const CanaisYouTube = () => {
 
   return (
     <section className='flex flex-col justify-center items-center my-3'>
-      <h1 className='text-2xl md:text-5xl uppercase text-branco-quente font-bold my-1 md:my-5'>Canais do YouTube</h1>
+      <h1 className='text-2xl md:text-5xl text-verde-escuro font-bold my-1 md:my-5'>Canais do YouTube</h1>
       {loading ? (
         <Loader />
       ) : (
