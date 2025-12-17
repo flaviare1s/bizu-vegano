@@ -42,7 +42,7 @@ export const Sorvetes = () => {
                       </div>
                     </div>
 
-                    <p className='text-gray-600 text-sm leading-relaxed mb-4'>{sorvete.descricao}</p>
+                    <p className='text-gray-600 text-sm leading-relaxed mb-4 font-semibold'>{sorvete.descricao}</p>
 
                     {sorvete.endereco && (
                       <div className='flex items-start gap-2 text-xs text-gray-500 bg-gray-50 rounded-lg p-3'>

@@ -52,7 +52,7 @@ export const Navbar = () => {
                 Alimentação <ChevronDown size={20} />
               </button>
               {isDropdownOpen && (
-                <ul ref={dropdownRef} className='absolute bg-branco-quente text-verde-escuro text-lg mt-2 pt-2 space-y-2 shadow-lg rounded font-medium'>
+                <ul ref={dropdownRef} className='absolute bg-white text-verde-escuro text-lg mt-2 pt-2 space-y-2 shadow-lg rounded font-medium shadow-md'>
                   <li>
                     <Link to='/restaurantes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Restaurantes</Link>
                   </li>

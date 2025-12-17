@@ -40,7 +40,7 @@ export const Confeitarias = () => {
                   </div>
                 </div>
 
-                <p className='text-gray-600 text-sm leading-relaxed mb-4'>{confeitaria.descricao}</p>
+                <p className='text-gray-600 text-sm leading-relaxed mb-4 font-semibold'>{confeitaria.descricao}</p>
 
                 {confeitaria.endereco && (
                   <div className='flex items-start gap-2 text-xs text-gray-500 bg-gray-50 rounded-lg p-3'>
