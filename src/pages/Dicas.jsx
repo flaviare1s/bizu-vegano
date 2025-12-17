@@ -5,15 +5,15 @@ import { DicasPorCategoria } from "../components/DicasPorCategoria"
 
 export const Dicas = () => {
   return (
-    <main className="mb-4 p-2">
-      <section className="flex flex-col gap-4">
+    <main className="mb-8 p-4">
+      <section className="flex flex-col gap-6">
         <DicasPorCategoria />
         <OutrosMunicipiosCearenses />
       </section>
-      <section className="flex flex-col gap-4 mt-4">
+      <section className="flex flex-col gap-6 mt-6">
         <Receitas />
       </section>
-      <section className="flex flex-col gap-4 mt-4">
+      <section className="flex flex-col gap-6 mt-6">
         <DicasPraticas />
       </section>
     </main>

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-  font-family: 'IBM Plex Mono', sans-serif;
-  background-color: #3F4D34;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -13,3 +13,23 @@ body {
   margin: auto;
   overflow-x: hidden;
 }
+
+.link-nav {
+  position: relative;
+}
+
+.link-nav::after {
+  position: absolute;
+  content: "";
+  bottom: -6px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #B89D52;
+  transition: width 0.3s ease;
+}
+
+.link-nav:hover::after {
+  width: 100%;
+}
+
