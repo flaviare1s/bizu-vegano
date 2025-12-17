@@ -58,9 +58,9 @@ export const Navbar = () => {
         ></div>
       )}
       <section className='bg-verde-escuro flex justify-between items-center w-full px-5 relative h-[80px] sm:h-[90px] z-50'>
-        <Link to='/' className='h-[60px] sm:h-[75px] flex items-center' onClick={closeMenu}>
+        <Link to='/' className='h-[60px] sm:h-[75px] flex items-center gap-2' onClick={closeMenu}>
           <img className='h-full rounded-s-full pr-1' src={logo} alt="logo" />
-          <h1 className='font-Playwrite text-xl lg:text-2xl font-bold text-logo underline'>Bizu Vegano</h1>
+          <h1 className='font-Playwrite text-2xl md:text-xl lg:text-2xl font-bold text-logo underline'>Bizu Vegano</h1>
         </Link>
         <nav className='flex items-center mr-4'>
           <ul className='hidden md:flex md:flex-wrap items-center md:space-x-6 md:text-sm'>
