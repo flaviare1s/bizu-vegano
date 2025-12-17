@@ -49,7 +49,7 @@ export const DicasPorCategoria = () => {
         {loading ? (
           <Loader />
         ) : (
-          <article className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full max-w-[1400px] justify-items-center'>
+          <article className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-[1400px] w-full px-4'>
             {categorias.map(categoria => (
               <div key={categoria.id} className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full'>
                 <div className='p-6 flex-grow'>
