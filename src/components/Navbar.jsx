@@ -52,33 +52,33 @@ export const Navbar = () => {
                 Alimentação <ChevronDown size={20} />
               </button>
               {isDropdownOpen && (
-                <ul ref={dropdownRef} className='absolute bg-white text-verde-escuro text-lg mt-2 pt-2 space-y-2 shadow-lg rounded font-medium'>
+                <ul ref={dropdownRef} className='absolute bg-white text-gray-700 text-base mt-3 py-2 shadow-xl rounded-xl font-medium min-w-[220px] border border-gray-100'>
                   <li>
-                    <Link to='/restaurantes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Restaurantes</Link>
+                    <Link to='/restaurantes' className='block px-6 py-2.5 hover:bg-verde-oliva hover:text-white transition-colors duration-200' onClick={closeDropdown}>Restaurantes</Link>
                   </li>
                   <li>
-                    <Link to='/lanchonetes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Lanchonetes</Link>
+                    <Link to='/lanchonetes' className='block px-6 py-2.5 hover:bg-verde-oliva hover:text-white transition-colors duration-200' onClick={closeDropdown}>Lanchonetes</Link>
                   </li>
                   <li>
-                    <Link to='/confeitarias' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Confeitarias</Link>
+                    <Link to='/confeitarias' className='block px-6 py-2.5 hover:bg-verde-oliva hover:text-white transition-colors duration-200' onClick={closeDropdown}>Confeitarias</Link>
                   </li>
                   <li>
-                    <Link to='/emporios' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Empórios e Antepastos</Link>
+                    <Link to='/emporios' className='block px-6 py-2.5 hover:bg-verde-oliva hover:text-white transition-colors duration-200' onClick={closeDropdown}>Empórios e Antepastos</Link>
                   </li>
                   <li>
-                    <Link to='/queijarias' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Queijarias</Link>
+                    <Link to='/queijarias' className='block px-6 py-2.5 hover:bg-verde-oliva hover:text-white transition-colors duration-200' onClick={closeDropdown}>Queijarias</Link>
                   </li>
                   <li>
-                    <Link to='/festas' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Festas</Link>
+                    <Link to='/festas' className='block px-6 py-2.5 hover:bg-verde-oliva hover:text-white transition-colors duration-200' onClick={closeDropdown}>Festas</Link>
                   </li>
                   <li>
-                    <Link to='/sorvetes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Sorvetes</Link>
+                    <Link to='/sorvetes' className='block px-6 py-2.5 hover:bg-verde-oliva hover:text-white transition-colors duration-200' onClick={closeDropdown}>Sorvetes</Link>
                   </li>
                   <li>
-                    <Link to='/cafes' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Cafés</Link>
+                    <Link to='/cafes' className='block px-6 py-2.5 hover:bg-verde-oliva hover:text-white transition-colors duration-200' onClick={closeDropdown}>Cafés</Link>
                   </li>
                   <li>
-                    <Link to='/onde-comer' className='block px-8 py-2 hover:bg-verde-escuro hover:text-branco-quente' onClick={closeDropdown}>Onde Encontrar</Link>
+                    <Link to='/onde-comer' className='block px-6 py-2.5 hover:bg-verde-oliva hover:text-white transition-colors duration-200' onClick={closeDropdown}>Onde Encontrar</Link>
                   </li>
                 </ul>
               )}
