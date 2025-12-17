@@ -31,7 +31,7 @@ export const Restaurantes = () => {
       ) : (
         <article className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full max-w-[1400px]'>
           {restaurantes.map(restaurante => (
-            <div key={restaurante.id} className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full'>
+            <div key={restaurante.id} className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full border-l-4 border-logo'>
               <div className='p-6 flex-grow'>
                 <div className='flex items-center gap-4 mb-4'>
                   <div className='w-14 h-14 bg-gradient-to-br from-verde-salvia to-verde-escuro rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
