@@ -39,7 +39,7 @@ export const Navbar = () => {
 
   return (
     <header className='bg-verde-escuro w-screen flex justify-between items-center mx-auto relative z-50 shadow-md'>
-      {isMenuOpen && <div className='overlay bg-black opacity-80 absolute top-0 left-0 w-screen h-screen z-30 pointer-events-none'></div>}
+      {isMenuOpen && <div className='overlay bg-black opacity-85 absolute top-0 left-0 w-screen h-screen z-30 pointer-events-none'></div>}
       <section className='bg-verde-escuro flex justify-between items-center w-full px-5 relative h-[80px] sm:h-[90px] z-40'>
         <Link to='/' className='h-[60px] sm:h-[75px] flex items-center' onClick={closeMenu}>
           <img className='h-full rounded-s-full pr-1' src={logo} alt="logo" />
@@ -97,8 +97,7 @@ export const Navbar = () => {
             </li>
           </ul>
           <button onClick={toggleMenu} className='md:hidden focus:outline-none sm:mr-2 flex items-center gap-2'>
-            <p className='text-logo text-base font-semibold md:hidden'>MENU</p>
-            {isMenuOpen ? <X size={24} className='text-logo' /> : <Menu size={24} className='text-logo' />}
+            {isMenuOpen ? <X size={30} className='text-logo' /> : <Menu size={30} className='text-logo' />}
           </button>
           {isMenuOpen && (
             <div className='absolute top-[80px] sm:top-[90px] right-0 w-[250px] z-40 shadow-md lg:hidden'>
