@@ -39,8 +39,13 @@ export const Navbar = () => {
 
   return (
     <header className='bg-verde-escuro w-screen flex justify-between items-center mx-auto relative z-50 shadow-md'>
-      {isMenuOpen && <div className='overlay bg-black opacity-85 absolute top-0 left-0 w-screen h-screen z-30 pointer-events-none'></div>}
-      <section className='bg-verde-escuro flex justify-between items-center w-full px-5 relative h-[80px] sm:h-[90px] z-40'>
+      {isMenuOpen && (
+        <div
+          className='fixed inset-0 bg-black bg-opacity-60 z-40 md:hidden transition-opacity duration-300'
+          onClick={closeMenu}
+        ></div>
+      )}
+      <section className='bg-verde-escuro flex justify-between items-center w-full px-5 relative h-[80px] sm:h-[90px] z-50'>
         <Link to='/' className='h-[60px] sm:h-[75px] flex items-center' onClick={closeMenu}>
           <img className='h-full rounded-s-full pr-1' src={logo} alt="logo" />
           <h1 className='font-Playwrite text-xl lg:text-2xl font-bold text-logo underline'>Bizu Vegano</h1>
@@ -96,54 +101,56 @@ export const Navbar = () => {
               <Link to='/sobre' className='text-branco-quente md:text-logo lg:text-lg font-semibold hover:opacity-80 link-nav' onClick={closeMenu}>Sobre</Link>
             </li>
           </ul>
-          <button onClick={toggleMenu} className='md:hidden focus:outline-none sm:mr-2 flex items-center gap-2'>
+          <button onClick={toggleMenu} className='md:hidden focus:outline-none flex items-center gap-2 z-50'>
             {isMenuOpen ? <X size={30} className='text-logo' /> : <Menu size={30} className='text-logo' />}
           </button>
-          {isMenuOpen && (
-            <div className='absolute top-[80px] sm:top-[90px] right-0 w-[250px] z-40 shadow-md lg:hidden'>
-              <ul className='flex flex-col'>
-                <li className='px-4 py-3 mt-2'>
-                  <Link to='/restaurantes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Restaurantes</Link>
+
+          {/* Menu Mobile Lateral */}
+          <div className={`fixed top-[80px] sm:top-[90px] right-0 h-[calc(100vh-80px)] sm:h-[calc(100vh-90px)] w-[280px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-50 md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <nav className='h-full overflow-y-auto py-4'>
+              <ul className='flex flex-col space-y-1 px-4'>
+                <li>
+                  <Link to='/restaurantes' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Restaurantes</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/lanchonetes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Lanchonetes</Link>
+                <li>
+                  <Link to='/lanchonetes' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Lanchonetes</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/confeitarias' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Confeitarias</Link>
+                <li>
+                  <Link to='/confeitarias' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Confeitarias</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/emporios' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Empórios e Antepastos</Link>
+                <li>
+                  <Link to='/emporios' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Empórios e Antepastos</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/queijarias' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Queijarias</Link>
+                <li>
+                  <Link to='/queijarias' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Queijarias</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/festas' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Festas</Link>
+                <li>
+                  <Link to='/festas' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Festas</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/sorvetes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Sorvetes</Link>
+                <li>
+                  <Link to='/sorvetes' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Sorvetes</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/cafes' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Cafés</Link>
+                <li>
+                  <Link to='/cafes' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Cafés</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/onde-comer' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Onde Encontrar</Link>
+                <li>
+                  <Link to='/onde-comer' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Onde Encontrar</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/cosmeticos' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Cosméticos</Link>
+                <li className='border-t border-gray-200 mt-2 pt-2'>
+                  <Link to='/cosmeticos' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Cosméticos</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/dicas' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Dicas</Link>
+                <li>
+                  <Link to='/dicas' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Dicas</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/canais-youtube' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Canais YouTube</Link>
+                <li>
+                  <Link to='/canais-youtube' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Canais YouTube</Link>
                 </li>
-                <li className='px-4 py-3'>
-                  <Link to='/sobre' className='text-logo font-semibold hover:opacity-80' onClick={closeMenu}>Sobre</Link>
+                <li>
+                  <Link to='/sobre' className='block px-4 py-3 text-gray-700 font-semibold hover:bg-verde-escuro hover:text-white rounded-lg transition-colors duration-200' onClick={closeMenu}>Sobre</Link>
                 </li>
               </ul>
-            </div>
-          )}
+            </nav>
+          </div>
         </nav>
       </section>
     </header>
