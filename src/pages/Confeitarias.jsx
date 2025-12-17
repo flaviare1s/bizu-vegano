@@ -32,7 +32,7 @@ export const Confeitarias = () => {
             <div key={confeitaria.id} className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full'>
               <div className='p-6 flex-grow'>
                 <div className='flex items-center gap-4 mb-4'>
-                  <div className='w-14 h-14 bg-gradient-to-br from-verde-salvia to-verde-oliva rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
+                  <div className='w-14 h-14 bg-gradient-to-br from-verde-salvia to-verde-escuro rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
                     <i className="fa-solid fa-cake-candles text-white text-xl"></i>
                   </div>
                   <div className='flex-1 min-w-0'>
@@ -62,7 +62,7 @@ export const Confeitarias = () => {
                   href={confeitaria.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className='w-full bg-verde-oliva hover:bg-verde-escuro text-white px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 font-semibold text-sm shadow-md hover:shadow-lg'
+                  className='w-full from-verde-salvia to-verde-escuro bg-gradient-to-br hover:bg-gradient-to-r text-white px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 font-semibold text-sm shadow-md hover:shadow-lg'
                 >
                   <i className="fa-brands fa-instagram text-xl"></i>
                   Ver no Instagram

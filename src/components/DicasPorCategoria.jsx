@@ -57,7 +57,7 @@ export const DicasPorCategoria = () => {
                 key={categoria.id} className='flex flex-col h-full group'>
                 <div className='p-4 flex-grow'>
                   <div className='flex items-center gap-4'>
-                    <div className='w-10 h-10 bg-gradient-to-br from-verde-salvia to-verde-oliva rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
+                    <div className='w-10 h-10 bg-gradient-to-br from-verde-salvia to-verde-escuro rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
                       <i className="fa-brands fa-instagram text-branco-quente text-2xl"></i>
                     </div>
                     <div className='flex-1 min-w-0'>

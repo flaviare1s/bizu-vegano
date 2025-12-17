@@ -68,7 +68,7 @@ export const OndeComer = () => {
           {loading ? (
             <Loader />
           ) : (
-              <article className='max-w-[870px] w-full px-4 justify-items-start mx-auto'>
+            <article className='max-w-[870px] w-full px-4 justify-items-start mx-auto'>
               {categorias.map(categoria => (
                 <a
                   key={categoria.id}
@@ -79,7 +79,7 @@ export const OndeComer = () => {
                 >
                   <div className='p-3 flex-grow items-center'>
                     <div className='flex items-center gap-4'>
-                      <div className='w-10 h-10 bg-gradient-to-br from-verde-salvia to-verde-oliva rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
+                      <div className='w-10 h-10 bg-gradient-to-br from-verde-salvia to-verde-escuro rounded-xl flex items-center justify-center flex-shrink-0 shadow-md'>
                         <i className="fa-brands fa-instagram text-branco-quente text-2xl"></i>
                       </div>
                       <div className='flex-1 min-w-0'>
