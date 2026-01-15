@@ -40,7 +40,7 @@ export const Navbar = () => {
           onClick={closeMenu}
         />
       )}
-      <section className='bg-verde-escuro flex justify-between items-center w-full px-5 relative h-[80px] sm:h-[90px] z-50'>
+      <section className='bg-verde-escuro flex justify-between items-center w-full px-5 fixed sm:relative top-0 h-[80px] sm:h-[90px] z-50'>
         <Logo closeMenu={closeMenu} />
         <nav className='flex items-center mr-4'>
           <DesktopNav

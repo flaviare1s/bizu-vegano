@@ -37,23 +37,25 @@ export const App = () => {
     <>
       <Navbar />
       <ScrollToTop />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/restaurantes' element={<Restaurantes />} />
-          <Route path='/lanchonetes' element={<Lanchonetes />} />
-          <Route path='/confeitarias' element={<Confeitarias />} />
-          <Route path='/emporios' element={<Emporios />} />
-          <Route path='/queijarias' element={<Queijarias />} />
-          <Route path='/festas' element={<Festas />} />
-          <Route path='/sorvetes' element={<Sorvetes />} />
-          <Route path='/cafes' element={<Cafes />} />
-          <Route path='/onde-comer' element={<OndeComer />} />
-          <Route path='/cosmeticos' element={<Cosmeticos />} />
-          <Route path='/dicas' element={<Dicas />} />
-          <Route path='/canais-youtube' element={<CanaisYouTube />} />
-          <Route path='/sobre' element={<Sobre />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
+        <div className='mt-[80px] sm:mt-0'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/restaurantes' element={<Restaurantes />} />
+            <Route path='/lanchonetes' element={<Lanchonetes />} />
+            <Route path='/confeitarias' element={<Confeitarias />} />
+            <Route path='/emporios' element={<Emporios />} />
+            <Route path='/queijarias' element={<Queijarias />} />
+            <Route path='/festas' element={<Festas />} />
+            <Route path='/sorvetes' element={<Sorvetes />} />
+            <Route path='/cafes' element={<Cafes />} />
+            <Route path='/onde-comer' element={<OndeComer />} />
+            <Route path='/cosmeticos' element={<Cosmeticos />} />
+            <Route path='/dicas' element={<Dicas />} />
+            <Route path='/canais-youtube' element={<CanaisYouTube />} />
+            <Route path='/sobre' element={<Sobre />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </div>
       <Footer />
     </>
   )
