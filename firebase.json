@@ -1,15 +1,18 @@
 {
   "hosting": {
     "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "https://bizu-vegano.web.app{,/**}",
+        "destination": "https://www.bizuvegano.com.br/:splat",
+        "type": 301
       }
     ]
   }
