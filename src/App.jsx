@@ -21,10 +21,6 @@ import { useEffect } from 'react'
 import { initGA, sendPageview } from './analytics'
 import { ScrollToTop } from './components/ScrollToTop'
 
-if (window.location.hostname.includes('web.app') || window.location.hostname.includes('firebaseapp.com')) {
-  window.location.replace('https://www.bizuvegano.com.br' + window.location.pathname + window.location.search);
-}
-
 export const App = () => {
   const location = useLocation();
 
