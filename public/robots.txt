@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /node_modules/
+
+Sitemap: https://www.bizuvegano.com.br/sitemap.xml
