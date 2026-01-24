@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <script src="https://kit.fontawesome.com/c78e85199e.js" crossorigin="anonymous"></script>
+    <script>
+      if (window.location.hostname.includes('web.app') || window.location.hostname.includes('firebaseapp.com')) {
+        window.location.replace('https://www.bizuvegano.com.br' + window.location.pathname + window.location.search);
+      }
+    </script>
 
     <meta name="description" content="Guia vegano de Fortaleza">
     <meta name="keywords" content="vegano, fortaleza, veganismo, vegetarianismo, dicas">
